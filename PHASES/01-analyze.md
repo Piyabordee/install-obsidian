@@ -23,6 +23,12 @@ Build a complete mental model of the repository by analyzing its actual structur
   - Java/Kotlin: Application.java, Main.java, *Application.kt
   - C/C++: main.c, main.cpp
   - Ruby: config.ru, main.rb
+  - PHP: index.php, artisan, public/index.php
+  - C# / .NET: Program.cs, Startup.cs, *.csproj
+  - Swift: AppDelegate.swift, @main, Package.swift
+  - Dart/Flutter: lib/main.dart, pubspec.yaml
+  - Elixir: mix.exs, lib/**/application.ex
+  - For other languages: look for the main entry pattern of the framework
 - Identify config files (package.json, pyproject.toml, Cargo.toml, etc.)
 - Identify documentation already present (README, CHANGELOG, CONTRIBUTING, etc.)
 - Identify build/packaging files (Dockerfile, Makefile, .spec, .iss, etc.)

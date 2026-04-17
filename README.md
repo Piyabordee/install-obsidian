@@ -80,8 +80,9 @@ your-repo/
 
 1. Open your repo in Obsidian
 2. Enable "Detect all file types" in Obsidian settings
-3. The graph view should now show meaningful connections between docs
-4. When you add new features, AI will follow the Doc Workflow in CLAUDE.md to create new docs automatically
+3. Ensure "Use [[Wikilinks]]" is enabled in Settings > Files & Links
+4. The graph view should now show meaningful connections between docs
+5. When you add new features, AI will follow the Doc Workflow in CLAUDE.md to create new docs automatically
 
 ## Requirements
 

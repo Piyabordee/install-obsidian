@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release of install-obsidian instruction set
 - INSTALL.md — step-by-step AI agent instructions
 - PRINCIPLES.md — documentation design philosophy
-- PHASES/ — three-phase execution workflow (Analyze, Design, Implement)
+- PHASES/ — four-phase execution workflow (Analyze, Design, Implement, Cleanup)
 - TEMPLATES/ — document structure templates (architecture, feature, project, reference, index, hub-claude-md)
 - README.md — project overview and usage guide
 - LICENSE — Unlicense (public domain)
