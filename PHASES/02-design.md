@@ -59,6 +59,19 @@ If existing docs (AGENTS.md, README, etc.) have valuable information:
 - Show what gets linked vs. rewritten
 - Propose whether to keep, redirect, or remove existing docs
 
+Include a **Files Marked for Removal** section:
+
+```markdown
+### Files Marked for Removal (pending Phase 4 verification)
+| File | Content migrated to | Status |
+|------|-------------------|--------|
+| AGENTS.md | [[docs/project/overview]], [[docs/architecture/structure]] | proposed |
+| old-doc.md | [[docs/features/workflow]] | proposed |
+```
+
+This list is used by Phase 4 to auto-detect and verify files eligible for cleanup.
+Each file starts as `proposed` and gets verified during Phase 4.
+
 ### 2.4 Priority Order
 
 List docs in creation order (most useful first):

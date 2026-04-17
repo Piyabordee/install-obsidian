@@ -13,6 +13,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 2. **Design** a doc tree tailored to this specific codebase
 3. **Create** interconnected docs with wiki links
 4. **Set up** CLAUDE.md as the operational hub
+5. **Clean up** installer artifacts and obsolete files (optional, user-approved)
 
 ## Constraints
 
@@ -33,6 +34,9 @@ Phase 2: DESIGN      → PHASES/02-design.md
 
 Phase 3: IMPLEMENT   → PHASES/03-implement.md
     Create docs, write content, add links, set up hub
+
+Phase 4: CLEANUP     → PHASES/04-cleanup.md
+    Remove installer artifacts and obsolete files (after human approval)
 ```
 
 ## How to Execute
@@ -44,6 +48,7 @@ Phase 3: IMPLEMENT   → PHASES/03-implement.md
 5. Present your proposed doc tree to the human, wait for approval
 6. Read `PHASES/03-implement.md` and execute it fully
 7. Present the result for final review
+8. Read `PHASES/04-cleanup.md` and execute it after human approves the review
 
 ## Templates
 
@@ -62,6 +67,7 @@ High-level verification — see `PHASES/03-implement.md` for the full detailed c
 - [ ] CLAUDE.md and docs/_index.md created as hubs
 - [ ] Wiki links connect related docs
 - [ ] No empty placeholder files or hardcoded assumptions
+- [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
 
 ---
 
