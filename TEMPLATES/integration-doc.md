@@ -50,7 +50,6 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 ## Related
 
 - [[INSTALL]] — How this template is used during implementation
-- [[PRINCIPLES]] — Design philosophy for integration docs
 - [[TEMPLATES/architecture-doc]] — Architecture may reference integrations
 - [[TEMPLATES/build-doc]] — Build process may depend on integrated tools
 - [[TEMPLATES/index-doc]] — Index doc links to all integration docs

@@ -49,7 +49,6 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 ## Related
 
 - [[INSTALL]] — How this template is used during implementation
-- [[PRINCIPLES]] — Design philosophy for architecture docs
 - [[TEMPLATES/feature-doc]] — Feature docs link to architecture docs
 - [[TEMPLATES/reference-doc]] — Reference docs complement architecture docs
 - [[TEMPLATES/index-doc]] — Index doc links to all architecture docs

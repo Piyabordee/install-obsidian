@@ -51,7 +51,6 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 ## Related
 
 - [[INSTALL]] — How this template is used during implementation
-- [[PRINCIPLES]] — Design philosophy for feature docs
 - [[TEMPLATES/architecture-doc]] — Feature docs link to architecture docs
 - [[TEMPLATES/project-doc]] — Project overview connects to feature docs
 - [[PHASES/03-implement]] — Phase that creates feature docs

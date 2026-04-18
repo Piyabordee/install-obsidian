@@ -55,7 +55,6 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 ## Related
 
 - [[INSTALL]] — How this template is used during implementation
-- [[PRINCIPLES]] — Design philosophy for build docs
 - [[TEMPLATES/testing-doc]] — Testing docs often reference build process
 - [[TEMPLATES/integration-doc]] — Build may depend on external tools
 - [[TEMPLATES/index-doc]] — Index doc links to all build docs

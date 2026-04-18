@@ -55,7 +55,6 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 ## Related
 
 - [[INSTALL]] — How this template is used during implementation
-- [[PRINCIPLES]] — Design philosophy for project docs
 - [[TEMPLATES/feature-doc]] — Features are documented separately
 - [[TEMPLATES/index-doc]] — Index doc links to all project docs
 - [[PHASES/01-analyze]] — Analysis feeds into project docs

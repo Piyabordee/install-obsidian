@@ -19,11 +19,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CHANGELOG.md — version tracking
 - CONTRIBUTING.md — contributor guidelines
 
----
-
-## Related
-
-- [[README]] — Project overview
-- [[INSTALL]] — AI agent instructions
-- [[PRINCIPLES]] — Design philosophy
-- [[CONTRIBUTING]] — How to contribute

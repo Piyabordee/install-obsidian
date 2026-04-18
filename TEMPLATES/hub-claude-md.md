@@ -119,7 +119,6 @@ When creating or significantly modifying a feature:
 ## Related
 
 - [[INSTALL]] — Main instruction flow that sets up CLAUDE.md
-- [[PRINCIPLES]] — Design philosophy for hub-and-spoke architecture
 - [[TEMPLATES/index-doc]] — The second navigation hub after CLAUDE.md
 - [[PHASES/02-design]] — Phase that designs the CLAUDE.md structure
 - [[PHASES/03-implement]] — Phase that creates CLAUDE.md
