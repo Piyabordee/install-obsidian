@@ -16,7 +16,7 @@ Design the documentation architecture based on Phase 1 analysis.
 Based on the analysis, determine:
 
 - Which category folders are justified (not every repo needs all categories)
-- Which specific docs should exist (each must earn its existence per PRINCIPLES.md)
+- Which specific docs should exist (each must earn its existence per [[PRINCIPLES]])
 - What CLAUDE.md should contain
 
 Present the proposed tree:
@@ -105,4 +105,15 @@ Present your design as:
 [N docs to create]
 ```
 
-Wait for the human to approve or request changes before proceeding to Phase 3.
+Wait for the human to approve or request changes before proceeding to [[PHASES/03-implement]].
+
+---
+
+## Related
+
+- [[INSTALL]] — Main instruction flow
+- [[PRINCIPLES]] — Design philosophy for doc tree decisions
+- [[PHASES/01-analyze]] — Previous phase: repo analysis
+- [[PHASES/03-implement]] — Next phase: create the docs
+- [[TEMPLATES/hub-claude-md]] — Template for CLAUDE.md hub
+- [[TEMPLATES/index-doc]] — Template for docs/_index.md navigation

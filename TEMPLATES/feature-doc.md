@@ -45,3 +45,13 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - **Key Files** should explain WHY each file matters, not just list them
 - **Configuration** is optional — omit if feature has no config
 - Every feature doc should link to at least one architecture doc
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for feature docs
+- [[TEMPLATES/architecture-doc]] — Feature docs link to architecture docs
+- [[TEMPLATES/project-doc]] — Project overview connects to feature docs
+- [[PHASES/03-implement]] — Phase that creates feature docs

@@ -43,3 +43,13 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - **How to Extend** is critical — it's the main reason this doc exists
 - Architecture docs should link to feature docs that implement the patterns
 - Do NOT list every file — only the ones that define the architecture
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for architecture docs
+- [[TEMPLATES/feature-doc]] — Feature docs link to architecture docs
+- [[TEMPLATES/reference-doc]] — Reference docs complement architecture docs
+- [[TEMPLATES/index-doc]] — Index doc links to all architecture docs

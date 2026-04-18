@@ -25,43 +25,48 @@ You are installing an Obsidian-compatible documentation system into this reposit
 
 ## Phase Sequence
 
-```
-Phase 1: ANALYZE     → PHASES/01-analyze.md
-    Explore repo structure, identify key folders, subsystems, entry points
-
-Phase 2: DESIGN      → PHASES/02-design.md
-    Propose doc tree, CLAUDE.md outline, migration plan
-
-Phase 3: IMPLEMENT   → PHASES/03-implement.md
-    Create docs, write content, add links, set up hub
-
-Phase 4: CLEANUP     → PHASES/04-cleanup.md
-    Remove installer artifacts and obsolete files (after human approval)
-```
+| Phase | File | Description |
+|-------|------|-------------|
+| 1: ANALYZE | [[PHASES/01-analyze]] | Explore repo structure, identify key folders, subsystems, entry points |
+| 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
+| 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub |
+| 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
 
 ## How to Execute
 
-1. Read `PRINCIPLES.md` to understand the design philosophy
-2. Read `PHASES/01-analyze.md` and execute it fully
+1. Read [[PRINCIPLES]] to understand the design philosophy
+2. Read [[PHASES/01-analyze]] and execute it fully
 3. Present your analysis to the human, wait for acknowledgment
-4. Read `PHASES/02-design.md` and execute it fully
+4. Read [[PHASES/02-design]] and execute it fully
 5. Present your proposed doc tree to the human, wait for approval
-6. Read `PHASES/03-implement.md` and execute it fully
+6. Read [[PHASES/03-implement]] and execute it fully
 7. Present the result for final review
-8. Read `PHASES/04-cleanup.md` and execute it after human approves the review
+8. Read [[PHASES/04-cleanup]] and execute it after human approves the review
 
 ## Templates
 
-Use files in `TEMPLATES/` as structure guides. Each template defines:
+Use files in [[TEMPLATES/]] as structure guides. Each template defines:
 - What sections a doc type should have
 - What questions it should answer
 - How it should link to other docs
+
+| Template | Purpose |
+|----------|---------|
+| [[TEMPLATES/architecture-doc]] | Structural patterns and subsystem design |
+| [[TEMPLATES/build-doc]] | Build process, packaging, release |
+| [[TEMPLATES/feature-doc]] | User-facing feature workflows |
+| [[TEMPLATES/hub-claude-md]] | CLAUDE.md hub structure |
+| [[TEMPLATES/index-doc]] | Documentation navigation hub |
+| [[TEMPLATES/integration-doc]] | External tools and libraries |
+| [[TEMPLATES/project-doc]] | Project-level knowledge |
+| [[TEMPLATES/reference-doc]] | Config, constants, conventions |
+| [[TEMPLATES/testing-doc]] | Testing strategy and conventions |
 
 Templates are NOT pre-filled content. You must fill them with real information from the repo.
 
 ## Completion Checklist
 
-High-level verification — see `PHASES/03-implement.md` for the full detailed checklist.
+High-level verification — see [[PHASES/03-implement]] for the full detailed checklist.
 
 - [ ] All approved docs created with real content
 - [ ] CLAUDE.md and docs/_index.md created as hubs
@@ -92,7 +97,7 @@ If the repo is a single-file project or lacks identifiable directories:
 ### Repo uses a non-standard language/framework
 - Identify entry points based on the framework's conventions
 - Note the unfamiliar stack in your analysis
-- Use the generic PRINCIPLES.md guidelines — they apply to any stack
+- Use the generic [[PRINCIPLES]] guidelines — they apply to any stack
 
 ### Existing docs conflict with proposed structure
 - Never delete existing docs without human approval
@@ -101,4 +106,13 @@ If the repo is a single-file project or lacks identifiable directories:
 
 ---
 
-Start by reading `PRINCIPLES.md`, then `PHASES/01-analyze.md`.
+## Related
+
+- [[README]] — Project overview and usage guide
+- [[PRINCIPLES]] — Design philosophy that governs all decisions
+- [[CONTRIBUTING]] — How to contribute changes
+- [[CHANGELOG]] — Version history
+
+---
+
+Start by reading [[PRINCIPLES]], then [[PHASES/01-analyze]].

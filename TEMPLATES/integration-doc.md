@@ -44,3 +44,13 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Focus on project-specific decisions, not general tool documentation
 - Include version constraints if the project is sensitive to versions
 - **Gotchas** should capture real problems encountered, not theoretical ones
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for integration docs
+- [[TEMPLATES/architecture-doc]] — Architecture may reference integrations
+- [[TEMPLATES/build-doc]] — Build process may depend on integrated tools
+- [[TEMPLATES/index-doc]] — Index doc links to all integration docs

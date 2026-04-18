@@ -73,3 +73,12 @@
 - **Organize by category** matching the folder structure under `docs/`
 - **Description should answer** "what will I learn by reading this?"
 - Keep this file compact — it's a map, not an encyclopedia
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for navigation hubs
+- [[TEMPLATES/hub-claude-md]] — CLAUDE.md is the first hub, _index.md is the second
+- [[PHASES/03-implement]] — Phase that creates docs/_index.md

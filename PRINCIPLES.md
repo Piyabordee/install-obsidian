@@ -88,15 +88,15 @@ This helps AI agents understand where a feature came from and find the original 
 
 ## Category Guide
 
-| Category | When to create | Key questions to answer |
-|----------|---------------|------------------------|
-| `docs/project/` | Always | What is this? What changed? What's broken? |
-| `docs/architecture/` | When codebase has identifiable structure | How does it fit together? What are the layers? |
-| `docs/features/` | When features have non-obvious workflows | How does this feature work end-to-end? |
-| `docs/integrations/` | When external tools/libraries have non-trivial usage | How is [tool] used? Where are the binaries? |
-| `docs/build/` | When build/packaging is non-trivial | How to build? How to release? |
-| `docs/testing/` | When testing approach matters | How to test? What's the strategy? |
-| `docs/reference/` | When config/paths/constants need explanation | What does this constant mean? How does path resolution work? |
+| Category | When to create | Key questions to answer | Template |
+|----------|---------------|------------------------|----------|
+| `docs/project/` | Always | What is this? What changed? What's broken? | [[TEMPLATES/project-doc]] |
+| `docs/architecture/` | When codebase has identifiable structure | How does it fit together? What are the layers? | [[TEMPLATES/architecture-doc]] |
+| `docs/features/` | When features have non-obvious workflows | How does this feature work end-to-end? | [[TEMPLATES/feature-doc]] |
+| `docs/integrations/` | When external tools/libraries have non-trivial usage | How is [tool] used? Where are the binaries? | [[TEMPLATES/integration-doc]] |
+| `docs/build/` | When build/packaging is non-trivial | How to build? How to release? | [[TEMPLATES/build-doc]] |
+| `docs/testing/` | When testing approach matters | How to test? What's the strategy? | [[TEMPLATES/testing-doc]] |
+| `docs/reference/` | When config/paths/constants need explanation | What does this constant mean? How does path resolution work? | [[TEMPLATES/reference-doc]] |
 
 Not every repo needs every category. Create only what the codebase justifies.
 
@@ -124,3 +124,22 @@ The documentation system is successful when:
 3. Adding a new feature doc is a 5-minute task (template + fill + link)
 4. No doc contains information that's obvious from reading the code
 5. Every doc has at least 2 incoming links from other docs
+
+---
+
+## Related
+
+- [[INSTALL]] — How these principles are applied in practice
+- [[README]] — Project overview
+- [[PHASES/01-analyze]] — Phase 1 uses these principles to analyze repos
+- [[PHASES/02-design]] — Phase 2 designs doc trees following these rules
+- [[PHASES/03-implement]] — Phase 3 implements docs based on these principles
+
+### Template References
+
+| Principle | Relevant Template |
+|-----------|------------------|
+| Hub-and-spoke architecture | [[TEMPLATES/hub-claude-md]], [[TEMPLATES/index-doc]] |
+| Every doc earns its existence | [[TEMPLATES/project-doc]], [[TEMPLATES/feature-doc]] |
+| Link generously, duplicate never | [[TEMPLATES/architecture-doc]], [[TEMPLATES/reference-doc]] |
+| Optimize for the graph | [[TEMPLATES/integration-doc]], [[TEMPLATES/testing-doc]] |

@@ -115,4 +115,14 @@ Present your findings as a structured analysis:
 [Which categories from PRINCIPLES.md are justified?]
 ```
 
-Wait for the human to acknowledge your analysis before proceeding to Phase 2.
+Wait for the human to acknowledge your analysis before proceeding to [[PHASES/02-design]].
+
+---
+
+## Related
+
+- [[INSTALL]] — Main instruction flow
+- [[PRINCIPLES]] — Design philosophy guiding your analysis
+- [[PHASES/02-design]] — Next phase: design the doc tree
+- [[TEMPLATES/project-doc]] — Template for project-level docs
+- [[TEMPLATES/architecture-doc]] — Template for architecture docs

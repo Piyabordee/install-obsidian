@@ -49,3 +49,13 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Include exact commands — this doc is a reference people follow step-by-step
 - **Troubleshooting** should cover real failures, not hypothetical ones
 - Only create this doc if the build process is non-trivial
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for build docs
+- [[TEMPLATES/testing-doc]] — Testing docs often reference build process
+- [[TEMPLATES/integration-doc]] — Build may depend on external tools
+- [[TEMPLATES/index-doc]] — Index doc links to all build docs

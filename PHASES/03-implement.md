@@ -22,7 +22,7 @@ mkdir -p docs/project docs/architecture docs/features docs/reference
 
 ### 3.2 Create docs/_index.md
 
-Use the `TEMPLATES/index-doc.md` pattern:
+Use the [[TEMPLATES/index-doc]] pattern:
 - Navigation hub with links to all docs
 - Organized by category
 - Include existing related files (README, etc.)
@@ -31,7 +31,7 @@ Use the `TEMPLATES/index-doc.md` pattern:
 
 For each approved doc:
 
-1. **Choose the right template** from `TEMPLATES/`
+1. **Choose the right template** from [[TEMPLATES/]]
 2. **Fill with real information** from your Phase 1 analysis
 3. **Add wiki links** to related docs
 4. **Add Design Origin** if the feature has a spec/plan
@@ -45,7 +45,7 @@ Rules while writing:
 
 ### 3.4 Create CLAUDE.md
 
-Use `TEMPLATES/hub-claude-md.md` as the structure guide:
+Use [[TEMPLATES/hub-claude-md]] as the structure guide:
 - Keep it compact (<100 lines if possible)
 - All links must point to real docs that exist
 - Working Rules must be specific to THIS repo
@@ -94,3 +94,18 @@ Present the result:
 ```
 
 Wait for the human's final review.
+
+---
+
+## Related
+
+- [[INSTALL]] — Main instruction flow
+- [[PRINCIPLES]] — Design philosophy governing implementation
+- [[PHASES/02-design]] — Previous phase: approved design
+- [[PHASES/04-cleanup]] — Next phase: remove artifacts
+- [[TEMPLATES/architecture-doc]] — Architecture doc template
+- [[TEMPLATES/feature-doc]] — Feature doc template
+- [[TEMPLATES/project-doc]] — Project doc template
+- [[TEMPLATES/reference-doc]] — Reference doc template
+- [[TEMPLATES/hub-claude-md]] — CLAUDE.md hub template
+- [[TEMPLATES/index-doc]] — Index doc template

@@ -19,7 +19,7 @@ Contributions are welcome! This project is public domain, so feel free to use an
 - Follow the existing phase structure (Analyze → Design → Implement)
 - Templates should remain generic — no repo-specific paths or assumptions
 - When adding new templates, include both Structure and Guidelines sections
-- Update CHANGELOG.md with your changes
+- Update [[CHANGELOG]] with your changes
 
 ## Reporting Issues
 
@@ -27,3 +27,12 @@ Open an issue with:
 - What you expected to happen
 - What actually happened
 - The repo you tested against (language, framework, size)
+
+---
+
+## Related
+
+- [[README]] — Project overview and usage guide
+- [[PRINCIPLES]] — Design philosophy to follow when making changes
+- [[CHANGELOG]] — Track your changes here
+- [[INSTALL]] — How the installer works

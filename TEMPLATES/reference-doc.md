@@ -41,3 +41,12 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Values should come from actual code, not assumptions
 - "How It Works" should explain the WHY, not just the WHAT
 - Reference docs are stable — they change less frequently than feature docs
+
+---
+
+## Related
+
+- [[INSTALL]] — How this template is used during implementation
+- [[PRINCIPLES]] — Design philosophy for reference docs
+- [[TEMPLATES/architecture-doc]] — Architecture defines what goes into reference
+- [[TEMPLATES/index-doc]] — Index doc links to all reference docs

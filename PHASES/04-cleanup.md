@@ -18,7 +18,7 @@ Clean up files that are no longer needed after the documentation system is insta
 
 ### 4.1 Identify Files Marked for Removal
 
-During Phase 2, the migration plan tracked which existing files had their content
+During [[PHASES/02-design]], the migration plan tracked which existing files had their content
 redistributed into the new doc structure. Cross-reference that plan to build a
 candidate list.
 
@@ -117,3 +117,11 @@ Present the cleanup result:
 
 If the installer directory (`install-obsidian/`) was deleted, note that this
 conversation was driving the installer and the human should be aware it is gone.
+
+---
+
+## Related
+
+- [[INSTALL]] — Main instruction flow
+- [[PHASES/02-design]] — Phase 2: migration plan originates here
+- [[PHASES/03-implement]] — Phase 3: must be complete before cleanup

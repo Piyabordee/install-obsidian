@@ -71,10 +71,12 @@ your-repo/
 
 | File | Purpose |
 |------|---------|
-| `INSTALL.md` | Step-by-step instructions for AI agents |
-| `PRINCIPLES.md` | Design principles and decision framework |
-| `TEMPLATES/` | Document structure templates (not content) |
-| `PHASES/` | Sequential execution phases |
+| [[INSTALL]] | Step-by-step instructions for AI agents |
+| [[PRINCIPLES]] | Design principles and decision framework |
+| [[CONTRIBUTING]] | Contributor guidelines |
+| [[CHANGELOG]] | Version tracking |
+| [[TEMPLATES/]] | Document structure templates (not content) |
+| [[PHASES/]] | Sequential execution phases |
 
 ## After Installation
 
@@ -89,6 +91,34 @@ your-repo/
 - An AI agent capable of reading files and exploring a codebase
 - The target repo must have identifiable structure (any language, any framework)
 - Obsidian (optional, for graph view)
+
+---
+
+## Navigation
+
+- [[INSTALL]] — Start here: step-by-step AI agent instructions
+- [[PRINCIPLES]] — Design philosophy and decision rules
+- [[CONTRIBUTING]] — How to contribute to this project
+- [[CHANGELOG]] — Version history
+
+### Phases
+
+- [[PHASES/01-analyze]] — Phase 1: Analyze repo structure
+- [[PHASES/02-design]] — Phase 2: Design doc tree
+- [[PHASES/03-implement]] — Phase 3: Create docs
+- [[PHASES/04-cleanup]] — Phase 4: Remove artifacts
+
+### Templates
+
+- [[TEMPLATES/architecture-doc]] — Architecture doc template
+- [[TEMPLATES/build-doc]] — Build doc template
+- [[TEMPLATES/feature-doc]] — Feature doc template
+- [[TEMPLATES/hub-claude-md]] — CLAUDE.md hub template
+- [[TEMPLATES/index-doc]] — Index doc template
+- [[TEMPLATES/integration-doc]] — Integration doc template
+- [[TEMPLATES/project-doc]] — Project doc template
+- [[TEMPLATES/reference-doc]] — Reference doc template
+- [[TEMPLATES/testing-doc]] — Testing doc template
 
 ---
 
