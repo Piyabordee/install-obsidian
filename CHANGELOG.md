@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PHASES/02-design.md now requires full AGENTS.md section mapping before Phase 3
 - PHASES/03-implement.md now includes a 100% AGENTS.md migration coverage gate
 - PHASES/04-cleanup.md now requires section-level migration evidence before deleting AGENTS.md
-- TEMPLATES/hub-claude-md.md now requires stable rules in `/.claude/rules/`, directory tree, DoD, and session closeout
+- TEMPLATES/hub-claude-md.md now requires stable rules in `./.claude/rules/`, directory tree, DoD, and session closeout
 - INSTALL.md and PHASES/03-implement.md now include stable rules separation, decisions.md, and verification/closeout expectations
 - INSTALL.md and README.md now include a final Optimize Links phase for duplicate/valueless link cleanup
 

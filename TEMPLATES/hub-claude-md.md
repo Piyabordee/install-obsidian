@@ -12,7 +12,7 @@
 
 > Central operational hub for AI agents working on this codebase.
 > For full documentation index, see [[docs/_index]].
-> Stable/non-negotiable rules are stored in `/.claude/rules/`.
+> Stable/non-negotiable rules are stored in `./.claude/rules/`.
 
 ---
 
@@ -75,7 +75,7 @@
 ... (keep to 5-8 rules, repo-specific)
 
 > Put only operational/session rules here.
-> Put stable rules in `/.claude/rules/`.
+> Put stable rules in `./.claude/rules/`.
 
 ---
 
@@ -151,7 +151,7 @@ At the end of each work session:
 
 - [[README]] — User-facing intro
 - [[AGENTS]] — (if preserved during transition)
-- `/.claude/rules/` — Stable rules
+- `./.claude/rules/` — Stable rules
 - [[decisions]] — Design decisions log
 ```
 
@@ -160,7 +160,7 @@ At the end of each work session:
 - Keep CLAUDE.md under 100 lines
 - Every link must point to a real file
 - Working Rules must be specific to THIS repo (no generic rules)
-- Keep stable/non-negotiable rules outside CLAUDE.md in `/.claude/rules/`
+- Keep stable/non-negotiable rules outside CLAUDE.md in `./.claude/rules/`
 - Key Warnings should point to docs that explain the risk
 - Doc Workflow section must exist so AI knows to auto-create docs
 - Include and maintain a directory tree to reduce path confusion

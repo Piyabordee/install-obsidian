@@ -1,7 +1,7 @@
 # install-obsidian — Project Hub
 
 > Operational hub for AI agents working in this repository.
-> Stable/non-negotiable rules live in `/.claude/rules/`.
+> Stable/non-negotiable rules live in `./.claude/rules/`.
 
 ---
 
@@ -35,7 +35,7 @@ install-obsidian/
 
 ## Rule Layers
 
-1. **Stable rules (immutable)**: read all files in `/.claude/rules/` first.
+1. **Stable rules (immutable)**: read all files in `./.claude/rules/` first.
 2. **Operational rules (editable)**: use this `CLAUDE.md` for workflow/navigation.
 3. **Task-specific instructions**: follow user instructions in current session.
 

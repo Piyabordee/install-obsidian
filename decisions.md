@@ -4,7 +4,7 @@
 
 ## 2026-04-21 — Separate stable rules from CLAUDE.md
 
-- **Decision**: keep immutable rules in `/.claude/rules/` and use `CLAUDE.md` as operational hub.
+- **Decision**: keep immutable rules in `./.claude/rules/` and use `CLAUDE.md` as operational hub.
 - **Why**: reduce accidental overwrite risk in session-level edits and prompt-driven changes.
 - **Impact**: agents must read stable rules first, then apply session instructions.
 

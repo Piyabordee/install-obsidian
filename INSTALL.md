@@ -22,7 +22,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 - **Do NOT hardcode assumptions** — analyze the repo to discover its structure
 - **Do NOT skip human approval** — present your design before implementing
 - **Do NOT overwrite existing docs** unless the human explicitly approves
-- **Do NOT mix stable rules into CLAUDE.md** — keep stable rules in `/.claude/rules/`
+- **Do NOT mix stable rules into CLAUDE.md** — keep stable rules in `./.claude/rules/`
 
 ## Installation Mode (required)
 
@@ -91,7 +91,7 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 
 - [ ] All approved docs created with real content
 - [ ] CLAUDE.md and docs/_index.md created as hubs
-- [ ] Stable rules created/updated in `/.claude/rules/`
+- [ ] Stable rules created/updated in `./.claude/rules/`
 - [ ] `decisions.md` created/updated with key design decisions
 - [ ] Mode requirements satisfied (`strict` full standard categories OR `adaptive` justified subset)
 - [ ] Wiki links connect related docs
@@ -107,7 +107,7 @@ Installation is complete only when all of the following are true:
 
 1. `CLAUDE.md` exists and is usable as the project hub
 2. `docs/_index.md` exists and links to the full documentation set
-3. Stable rules exist in `/.claude/rules/` and are referenced by `CLAUDE.md`
+3. Stable rules exist in `./.claude/rules/` and are referenced by `CLAUDE.md`
 4. `decisions.md` exists for persistent design rationale
 5. Core docs exist per selected mode:
     - `strict`: all standard categories from [[README]] are represented
@@ -127,7 +127,7 @@ Run this checklist before closing the installation:
 - [ ] Every created doc has at least 2 useful related links
 - [ ] No broken wiki links to missing files
 - [ ] Selected mode validation passed (`strict` or `adaptive`)
-- [ ] Stable rules are placed in `/.claude/rules/` (not mixed into CLAUDE.md)
+- [ ] Stable rules are placed in `./.claude/rules/` (not mixed into CLAUDE.md)
 - [ ] `decisions.md` records key design choices
 - [ ] Verification command for affected stack passed (`tsc --noEmit` for TypeScript repos)
 - [ ] Work was committed in issue-scoped chunks

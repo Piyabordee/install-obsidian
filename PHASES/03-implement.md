@@ -51,13 +51,13 @@ Use [[TEMPLATES/hub-claude-md]] as the structure guide:
 - Working Rules must be specific to THIS repo
 - Doc Workflow section must be included
 - Include an authoritative directory tree
-- Keep stable/non-negotiable rules in `/.claude/rules/` (do not mix in CLAUDE.md)
+- Keep stable/non-negotiable rules in `./.claude/rules/` (do not mix in CLAUDE.md)
 
 ### 3.5 Create Stable Rules + decisions.md
 
 Create or update:
 
-1. `/.claude/rules/` for stable rules (security/compliance/permanent constraints)
+1. `./.claude/rules/` for stable rules (security/compliance/permanent constraints)
 2. `decisions.md` for design rationale that must survive context resets
 
 Rules:
@@ -96,7 +96,7 @@ After creating all docs:
 - [ ] Every doc has a Related section with at least 2 links
 - [ ] Doc Workflow section exists in CLAUDE.md
 - [ ] CLAUDE.md contains an authoritative directory tree
-- [ ] Stable rules exist in `/.claude/rules/` and are not mixed into CLAUDE.md
+- [ ] Stable rules exist in `./.claude/rules/` and are not mixed into CLAUDE.md
 - [ ] decisions.md exists and includes key design choices
 - [ ] Verification commands passed for affected stack (`tsc --noEmit` for TypeScript repos)
 - [ ] Work was committed in issue-scoped chunks
