@@ -11,8 +11,8 @@ Optimize wiki-link structure in `CLAUDE.md` and all files under `docs/` so links
 
 ## Precondition
 
-- Phase 3 is complete
-- Phase 4 is complete (or explicitly skipped by the human)
+- Phase 3: IMPLEMENT is complete
+- Phase 4: CLEANUP is complete (or explicitly skipped by the human)
 - Human approved entering final optimization pass
 
 ## What counts as a valueless link

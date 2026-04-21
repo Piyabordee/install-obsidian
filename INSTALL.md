@@ -46,7 +46,7 @@ If the human does not specify a mode, default to `strict`.
 |-------|------|-------------|
 | 1: ANALYZE | [[PHASES/01-analyze]] | Explore repo structure, identify key folders, subsystems, entry points |
 | 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
-| 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub |
+| 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub, stable rules, and decisions log |
 | 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
 | 5: OPTIMIZE LINKS | [[PHASES/05-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
 
