@@ -83,7 +83,7 @@
 
 When creating or significantly modifying a feature:
 
-1. **Spec + Plan** — create in `docs/superpowers/` (if using that workflow)
+1. **Spec + Plan** — create in the repo's chosen design/planning location (if using that workflow)
 2. **Feature doc** — create in `docs/features/` or appropriate category
 3. **Design Origin** — link to spec/plan if applicable
 4. **Link here** — add entry to Documentation Map below
