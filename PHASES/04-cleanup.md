@@ -131,3 +131,4 @@ conversation was driving the installer and the human should be aware it is gone.
 - [[INSTALL]] — Main instruction flow
 - [[PHASES/02-design]] — Phase 2: migration plan originates here
 - [[PHASES/03-implement]] — Phase 3: must be complete before cleanup
+- [[PHASES/05-optimize-links]] — Final pass after cleanup to optimize wiki links

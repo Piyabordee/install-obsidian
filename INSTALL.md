@@ -11,9 +11,9 @@ You are installing an Obsidian-compatible documentation system into this reposit
 
 1. **Analyze** the repo (do NOT assume anything)
 2. **Design** a doc tree tailored to this specific codebase
-3. **Create** interconnected docs with wiki links
-4. **Set up** CLAUDE.md as the operational hub
-5. **Clean up** installer artifacts and obsolete files (optional, user-approved)
+3. **Implement** docs, hub, stable rules, and decisions log
+4. **Clean up** installer artifacts and obsolete files (optional, user-approved)
+5. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
 
 ## Constraints
 
@@ -22,6 +22,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 - **Do NOT hardcode assumptions** — analyze the repo to discover its structure
 - **Do NOT skip human approval** — present your design before implementing
 - **Do NOT overwrite existing docs** unless the human explicitly approves
+- **Do NOT mix stable rules into CLAUDE.md** — keep stable rules in `./.claude/rules/`
 
 ## Installation Mode (required)
 
@@ -45,8 +46,9 @@ If the human does not specify a mode, default to `strict`.
 |-------|------|-------------|
 | 1: ANALYZE | [[PHASES/01-analyze]] | Explore repo structure, identify key folders, subsystems, entry points |
 | 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
-| 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub |
+| 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub, stable rules, and decisions log |
 | 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
+| 5: OPTIMIZE LINKS | [[PHASES/05-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
 
 ## How to Execute
 
@@ -56,8 +58,10 @@ If the human does not specify a mode, default to `strict`.
 4. Read [[PHASES/02-design]] and execute it fully
 5. Present your proposed doc tree to the human, wait for approval
 6. Read [[PHASES/03-implement]] and execute it fully
-7. Present the result for final review
-8. Read [[PHASES/04-cleanup]] and execute it after human approves the review
+7. Ensure `decisions.md` is updated with notable design choices from Phase 3
+8. Present the result for final review
+9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
+10. Read [[PHASES/05-optimize-links]] and run final link optimization pass
 
 ## Templates
 
@@ -87,12 +91,15 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 
 - [ ] All approved docs created with real content
 - [ ] CLAUDE.md and docs/_index.md created as hubs
+- [ ] Stable rules created/updated in `./.claude/rules/`
+- [ ] `decisions.md` created/updated with key design decisions
 - [ ] Mode requirements satisfied (`strict` full standard categories OR `adaptive` justified subset)
 - [ ] Wiki links connect related docs
 - [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
 - [ ] No critical information from AGENTS.md is lost
 - [ ] No empty placeholder files or hardcoded assumptions
 - [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
+- [ ] Link optimization completed for `CLAUDE.md` + `docs/` (duplicate/valueless links removed)
 
 ## Definition of Done
 
@@ -100,24 +107,35 @@ Installation is complete only when all of the following are true:
 
 1. `CLAUDE.md` exists and is usable as the project hub
 2. `docs/_index.md` exists and links to the full documentation set
-3. Core docs exist per selected mode:
-   - `strict`: all standard categories from [[README]] are represented
-   - `adaptive`: only analysis-justified categories are present (with rationale in Phase 2 output)
-4. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
-5. Post-install validation checklist is complete with no unresolved critical failures
+3. Stable rules exist in `./.claude/rules/` and are referenced by `CLAUDE.md`
+4. `decisions.md` exists for persistent design rationale
+5. Core docs exist per selected mode:
+    - `strict`: all standard categories from [[README]] are represented
+    - `adaptive`: only analysis-justified categories are present (with rationale in Phase 2 output)
+6. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
+7. Final link optimization pass completed on `CLAUDE.md` + `docs/`
+8. Post-install validation checklist is complete with no unresolved critical failures
 
 ## Post-Install Validation (mandatory)
 
 Run this checklist before closing the installation:
 
 - [ ] `CLAUDE.md` exists and links to `[[docs/_index]]`
+- [ ] `CLAUDE.md` includes an authoritative directory tree
 - [ ] `docs/_index.md` links to every created doc
 - [ ] Every created doc has real content (no placeholders)
 - [ ] Every created doc has at least 2 useful related links
 - [ ] No broken wiki links to missing files
 - [ ] Selected mode validation passed (`strict` or `adaptive`)
+- [ ] Stable rules are placed in `./.claude/rules/` (not mixed into CLAUDE.md)
+- [ ] `decisions.md` records key design choices
+- [ ] Verification command for affected stack passed (`tsc --noEmit` for TypeScript repos)
+- [ ] Work was committed in issue-scoped chunks
+- [ ] `CLAUDE.md` was updated at end of session
 - [ ] AGENTS.md migration coverage report included (if AGENTS.md exists)
 - [ ] Cleanup decisions were human-approved item by item
+- [ ] Duplicate/valueless wiki links were removed from `CLAUDE.md` and `docs/`
+- [ ] Link graph remains navigable and hub docs are still connected
 
 ---
 

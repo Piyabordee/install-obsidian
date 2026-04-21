@@ -12,6 +12,7 @@
 
 > Central operational hub for AI agents working on this codebase.
 > For full documentation index, see [[docs/_index]].
+> Stable/non-negotiable rules are stored in `./.claude/rules/`.
 
 ---
 
@@ -29,9 +30,30 @@
 
 ## Read First
 
+- `/.claude/rules/*` — Stable rules (security/compliance/always-on)
 - [[docs/_index]] — Full documentation map
 - [[docs/project/overview]] — Project identity and stack
 - [[README]] — User-facing introduction
+
+---
+
+## Directory Tree (Authoritative)
+
+```text
+[project-root]/
+├── .claude/
+│   └── rules/
+├── docs/
+│   ├── _index.md
+│   ├── project/
+│   ├── architecture/
+│   ├── features/
+│   └── ...
+├── CLAUDE.md
+└── decisions.md
+```
+
+> Keep this tree updated when top-level structure changes.
 
 ---
 
@@ -51,6 +73,9 @@
 2. **[Rule 2]** — [why]
 3. **[Rule 3]** — [why]
 ... (keep to 5-8 rules, repo-specific)
+
+> Put only operational/session rules here.
+> Put stable rules in `./.claude/rules/`.
 
 ---
 
@@ -100,10 +125,34 @@ When creating or significantly modifying a feature:
 
 ---
 
+## Definition of Done
+
+- [ ] Change implemented with minimal scope
+- [ ] Related docs updated
+- [ ] Verification commands run for affected stack
+  - TypeScript repos: `tsc --noEmit`
+- [ ] Commit is scoped to one issue/change set
+- [ ] `decisions.md` updated for lasting design choices
+- [ ] CLAUDE.md updated to match current project state
+
+---
+
+## Session Closeout
+
+At the end of each work session:
+
+1. Update `CLAUDE.md` according to the current project state
+2. Update `decisions.md` with new stable decisions
+3. Re-check Documentation Map and links
+
+---
+
 ## Related Files
 
 - [[README]] — User-facing intro
 - [[AGENTS]] — (if preserved during transition)
+- `./.claude/rules/` — Stable rules
+- [[decisions]] — Design decisions log
 ```
 
 ## Guidelines
@@ -111,8 +160,11 @@ When creating or significantly modifying a feature:
 - Keep CLAUDE.md under 100 lines
 - Every link must point to a real file
 - Working Rules must be specific to THIS repo (no generic rules)
+- Keep stable/non-negotiable rules outside CLAUDE.md in `./.claude/rules/`
 - Key Warnings should point to docs that explain the risk
 - Doc Workflow section must exist so AI knows to auto-create docs
+- Include and maintain a directory tree to reduce path confusion
+- Add/maintain a DoD + Session Closeout section
 
 ---
 
