@@ -15,6 +15,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 4. **Set up** CLAUDE.md as the operational hub
 5. **Set up** stable rules and decisions log (`.claude/rules/`, `decisions.md`)
 6. **Clean up** installer artifacts and obsolete files (optional, user-approved)
+7. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
 
 ## Constraints
 
@@ -49,6 +50,7 @@ If the human does not specify a mode, default to `strict`.
 | 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
 | 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub |
 | 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
+| 5: OPTIMIZE LINKS | [[PHASES/05-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
 
 ## How to Execute
 
@@ -61,6 +63,7 @@ If the human does not specify a mode, default to `strict`.
 7. Update `decisions.md` with notable design choices
 8. Present the result for final review
 9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
+10. Read [[PHASES/05-optimize-links]] and run final link optimization pass
 
 ## Templates
 
@@ -98,6 +101,7 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 - [ ] No critical information from AGENTS.md is lost
 - [ ] No empty placeholder files or hardcoded assumptions
 - [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
+- [ ] Link optimization completed for `CLAUDE.md` + `docs/` (duplicate/valueless links removed)
 
 ## Definition of Done
 
@@ -111,7 +115,8 @@ Installation is complete only when all of the following are true:
     - `strict`: all standard categories from [[README]] are represented
     - `adaptive`: only analysis-justified categories are present (with rationale in Phase 2 output)
 6. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
-7. Post-install validation checklist is complete with no unresolved critical failures
+7. Final link optimization pass completed on `CLAUDE.md` + `docs/`
+8. Post-install validation checklist is complete with no unresolved critical failures
 
 ## Post-Install Validation (mandatory)
 
@@ -131,6 +136,8 @@ Run this checklist before closing the installation:
 - [ ] `CLAUDE.md` was updated at end of session
 - [ ] AGENTS.md migration coverage report included (if AGENTS.md exists)
 - [ ] Cleanup decisions were human-approved item by item
+- [ ] Duplicate/valueless wiki links were removed from `CLAUDE.md` and `docs/`
+- [ ] Link graph remains navigable and hub docs are still connected
 
 ---
 
