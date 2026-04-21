@@ -23,18 +23,21 @@ The result: your repo gains a living knowledge base that both humans and AI can 
 ### Option A: With Claude Code
 
 ```bash
-# 1. Copy this folder into your repo root
+# 1. Clone this repository
+git clone https://github.com/Piyabordee/install-obsidian.git
+
+# 2. Copy this folder into your repo root
 # macOS / Linux:
 cp -r install-obsidian/ /path/to/your-repo/
 
 # Windows (PowerShell):
 Copy-Item -Recurse install-obsidian\ C:\path\to\your-repo\
 
-# 2. Open Claude Code in your repo
+# 3. Open Claude Code in your repo
 cd /path/to/your-repo
 claude
 
-# 3. Tell Claude:
+# 4. Tell Claude:
 > Read install-obsidian/INSTALL.md and follow the instructions
 ```
 
