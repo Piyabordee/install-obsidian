@@ -11,11 +11,9 @@ You are installing an Obsidian-compatible documentation system into this reposit
 
 1. **Analyze** the repo (do NOT assume anything)
 2. **Design** a doc tree tailored to this specific codebase
-3. **Create** interconnected docs with wiki links
-4. **Set up** CLAUDE.md as the operational hub
-5. **Set up** stable rules and decisions log (`.claude/rules/`, `decisions.md`)
-6. **Clean up** installer artifacts and obsolete files (optional, user-approved)
-7. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
+3. **Implement** docs + hub + stable rules + decisions log
+4. **Clean up** installer artifacts and obsolete files (optional, user-approved)
+5. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
 
 ## Constraints
 

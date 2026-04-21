@@ -14,8 +14,9 @@ This is **not** a traditional installer. It is a set of Markdown instructions th
 
 1. **Analyze** your repo structure
 2. **Design** a documentation tree tailored to your codebase
-3. **Create** interconnected Markdown docs optimized for Obsidian graph view
-4. **Optimize** link structure to remove duplicate/valueless links for cleaner graph + lower token use
+3. **Implement** interconnected Markdown docs + hub instructions
+4. **Clean up** obsolete artifacts (human-approved)
+5. **Optimize** link structure to remove duplicate/valueless links for cleaner graph + lower token use
 
 The result: your repo gains a living knowledge base that both humans and AI can navigate.
 
