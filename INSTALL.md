@@ -58,7 +58,7 @@ If the human does not specify a mode, default to `strict`.
 4. Read [[PHASES/02-design]] and execute it fully
 5. Present your proposed doc tree to the human, wait for approval
 6. Read [[PHASES/03-implement]] and execute it fully
-7. Update `decisions.md` with notable design choices
+7. Ensure `decisions.md` is updated with notable design choices from Phase 3
 8. Present the result for final review
 9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
 10. Read [[PHASES/05-optimize-links]] and run final link optimization pass

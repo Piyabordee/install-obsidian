@@ -11,7 +11,7 @@ Optimize wiki-link structure in `CLAUDE.md` and all files under `docs/` so links
 
 ## Precondition
 
-- Phase 3: IMPLEMENT is complete
+- Phase 3: IMPLEMENT is complete (its required checklist/verification has passed)
 - Phase 4: CLEANUP is complete (or explicitly skipped by the human)
 - Human approved entering final optimization pass
 
