@@ -11,7 +11,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 
 1. **Analyze** the repo (do NOT assume anything)
 2. **Design** a doc tree tailored to this specific codebase
-3. **Implement** docs + hub + stable rules + decisions log
+3. **Implement** docs, hub, stable rules, and decisions log
 4. **Clean up** installer artifacts and obsolete files (optional, user-approved)
 5. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
 
@@ -48,7 +48,7 @@ If the human does not specify a mode, default to `strict`.
 | 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
 | 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub |
 | 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
-| 5: OPTIMIZE LINKS | INSTALL.md (this file) | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
+| 5: OPTIMIZE LINKS | [[PHASES/05-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
 
 ## How to Execute
 
@@ -61,7 +61,7 @@ If the human does not specify a mode, default to `strict`.
 7. Update `decisions.md` with notable design choices
 8. Present the result for final review
 9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
-10. Run **Phase 5: OPTIMIZE LINKS** in this file
+10. Read [[PHASES/05-optimize-links]] and run final link optimization pass
 
 ## Templates
 
@@ -84,25 +84,6 @@ Use files in [[TEMPLATES/]] as structure guides. Each template defines:
 | [[TEMPLATES/testing-doc]] | Testing strategy and conventions |
 
 Templates are NOT pre-filled content. You must fill them with real information from the repo.
-
-## Phase 5: OPTIMIZE LINKS (final pass)
-
-Run this only after implementation and cleanup are done.
-
-Scope:
-- `CLAUDE.md`
-- all markdown files under `docs/`
-
-What to do:
-1. Remove duplicate links in the same local context/section
-2. Remove links that add no navigation or understanding value (valueless links)
-3. Keep essential hub/navigation links (`CLAUDE.md`, `docs/_index.md`, key related links)
-4. Verify no broken wiki links remain
-
-Output:
-- list of updated files
-- count of removed duplicate/valueless links
-- confirmation that graph remains connected and cleaner
 
 ## Completion Checklist
 

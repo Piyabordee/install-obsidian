@@ -15,6 +15,7 @@ This is **not** a traditional installer. It is a set of Markdown instructions th
 1. **Analyze** your repo structure
 2. **Design** a documentation tree tailored to your codebase
 3. **Create** interconnected Markdown docs optimized for Obsidian graph view
+4. **Optimize** link structure to remove duplicate/valueless links for cleaner graph + lower token use
 
 The result: your repo gains a living knowledge base that both humans and AI can navigate.
 
@@ -100,7 +101,7 @@ In both modes, files must contain real content. No empty placeholders.
 | [[CONTRIBUTING]] | Contributor guidelines |
 | [[CHANGELOG]] | Version tracking |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
-| `PHASES/` | Sequential execution phases |
+| `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Cleanup → Optimize Links) |
 
 ## After Installation
 
