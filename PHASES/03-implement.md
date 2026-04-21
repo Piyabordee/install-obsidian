@@ -50,15 +50,29 @@ Use [[TEMPLATES/hub-claude-md]] as the structure guide:
 - All links must point to real docs that exist
 - Working Rules must be specific to THIS repo
 - Doc Workflow section must be included
+- Include an authoritative directory tree
+- Keep stable/non-negotiable rules in `/.claude/rules/` (do not mix in CLAUDE.md)
 
-### 3.5 Handle Existing Docs
+### 3.5 Create Stable Rules + decisions.md
+
+Create or update:
+
+1. `/.claude/rules/` for stable rules (security/compliance/permanent constraints)
+2. `decisions.md` for design rationale that must survive context resets
+
+Rules:
+- Stable rules must be linkable from CLAUDE.md
+- decisions.md entries must include decision + rationale + impact
+- Do not duplicate long explanations already covered in docs; link instead
+
+### 3.6 Handle Existing Docs
 
 Per the approved migration plan:
 - Keep, redirect, or link existing docs as approved
 - Do NOT delete anything the human hasn't explicitly approved for deletion
 - If in doubt, preserve and link
 
-### 3.6 Migration Coverage Gate (AGENTS.md)
+### 3.7 Migration Coverage Gate (AGENTS.md)
 
 If `AGENTS.md` exists:
 
@@ -71,7 +85,7 @@ If `AGENTS.md` exists:
 4. Gate rule: coverage must be `Y/Y` (100%) before implementation can be considered complete
 5. If any section is unmapped or uncertain, mark implementation as incomplete and return to migration work
 
-### 3.7 Final Verification
+### 3.8 Final Verification
 
 After creating all docs:
 
@@ -81,6 +95,12 @@ After creating all docs:
 - [ ] docs/_index.md links to every doc
 - [ ] Every doc has a Related section with at least 2 links
 - [ ] Doc Workflow section exists in CLAUDE.md
+- [ ] CLAUDE.md contains an authoritative directory tree
+- [ ] Stable rules exist in `/.claude/rules/` and are not mixed into CLAUDE.md
+- [ ] decisions.md exists and includes key design choices
+- [ ] Verification commands passed for affected stack (`tsc --noEmit` for TypeScript repos)
+- [ ] Work was committed in issue-scoped chunks
+- [ ] CLAUDE.md updated at end of session
 - [ ] No hardcoded assumptions from other repos
 - [ ] No information was lost from existing docs (if migration)
 - [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
