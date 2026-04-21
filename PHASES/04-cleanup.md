@@ -27,10 +27,14 @@ Also detect any additional files that may now be redundant:
 1. **Read the Phase 2 migration plan** — it lists files proposed for removal
 2. **Verify content migration** — for each file on the list, confirm that its
    information now exists in the new docs:
-   - Open the original file
-   - Search the new docs for the same information
-   - Mark as `verified` only if all meaningful content has been migrated
+    - Open the original file
+    - Search the new docs for the same information
+    - Mark as `verified` only if all meaningful content has been migrated
+    - Record section-level evidence (source heading -> destination file/heading)
 3. **Flag uncertainties** — if any content might have been lost, mark as `uncertain`
+
+If the file is `AGENTS.md`, section-level verification is mandatory and must reference
+the mapping produced in [[PHASES/02-design]] (recommended format: [[TEMPLATES/migration-map]]).
 
 ### 4.2 Detect Installer Directory
 
@@ -75,12 +79,14 @@ Rules:
 - **Never delete `uncertain` files** unless the human explicitly overrides
 - **Never delete files not in the report** — if a file wasn't analyzed, don't touch it
 - If the human says "no" or "skip" for any file, preserve it
+- **Never delete `AGENTS.md`** unless every meaningful section is `verified` with section-level evidence
 
 ### 4.5 Execute Cleanup
 
 After receiving confirmation for each item:
 
 1. Delete only the files the human approved
+   - Keep `AGENTS.md` if any section is `uncertain` or missing evidence
 2. If `install-obsidian/` was approved for deletion, remove the entire directory
 3. Verify no broken links were created by the deletion:
    - Search all docs for wiki links to deleted files

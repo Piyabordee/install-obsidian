@@ -23,6 +23,22 @@ You are installing an Obsidian-compatible documentation system into this reposit
 - **Do NOT skip human approval** — present your design before implementing
 - **Do NOT overwrite existing docs** unless the human explicitly approves
 
+## Installation Mode (required)
+
+Choose one mode before Phase 2 and include it in the design proposal.
+
+### Mode: `strict`
+- Create the standard category structure from [[README]]: `project`, `architecture`, `features`, `integrations`, `build`, `testing`, `reference`
+- Create at least one real-content doc in each category, or explicitly link existing docs that satisfy the category
+- Use this mode when the human expects the full standardized structure
+
+### Mode: `adaptive`
+- Keep the current behavior from [[PRINCIPLES]]: create only categories justified by the repo analysis
+- Skip non-applicable categories
+- Use this mode when minimal, structure-following documentation is preferred
+
+If the human does not specify a mode, default to `strict`.
+
 ## Phase Sequence
 
 | Phase | File | Description |
@@ -58,6 +74,7 @@ Use files in [[TEMPLATES/]] as structure guides. Each template defines:
 | [[TEMPLATES/hub-claude-md]] | CLAUDE.md hub structure |
 | [[TEMPLATES/index-doc]] | Documentation navigation hub |
 | [[TEMPLATES/integration-doc]] | External tools and libraries |
+| [[TEMPLATES/migration-map]] | Section-by-section migration mapping (AGENTS.md and other docs) |
 | [[TEMPLATES/project-doc]] | Project-level knowledge |
 | [[TEMPLATES/reference-doc]] | Config, constants, conventions |
 | [[TEMPLATES/testing-doc]] | Testing strategy and conventions |
@@ -70,9 +87,37 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 
 - [ ] All approved docs created with real content
 - [ ] CLAUDE.md and docs/_index.md created as hubs
+- [ ] Mode requirements satisfied (`strict` full standard categories OR `adaptive` justified subset)
 - [ ] Wiki links connect related docs
+- [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
+- [ ] No critical information from AGENTS.md is lost
 - [ ] No empty placeholder files or hardcoded assumptions
 - [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
+
+## Definition of Done
+
+Installation is complete only when all of the following are true:
+
+1. `CLAUDE.md` exists and is usable as the project hub
+2. `docs/_index.md` exists and links to the full documentation set
+3. Core docs exist per selected mode:
+   - `strict`: all standard categories from [[README]] are represented
+   - `adaptive`: only analysis-justified categories are present (with rationale in Phase 2 output)
+4. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
+5. Post-install validation checklist is complete with no unresolved critical failures
+
+## Post-Install Validation (mandatory)
+
+Run this checklist before closing the installation:
+
+- [ ] `CLAUDE.md` exists and links to `[[docs/_index]]`
+- [ ] `docs/_index.md` links to every created doc
+- [ ] Every created doc has real content (no placeholders)
+- [ ] Every created doc has at least 2 useful related links
+- [ ] No broken wiki links to missing files
+- [ ] Selected mode validation passed (`strict` or `adaptive`)
+- [ ] AGENTS.md migration coverage report included (if AGENTS.md exists)
+- [ ] Cleanup decisions were human-approved item by item
 
 ---
 
@@ -103,6 +148,11 @@ If the repo is a single-file project or lacks identifiable directories:
 - Never delete existing docs without human approval
 - Link existing docs from the new navigation hub
 - Propose a migration plan in Phase 2
+
+### AGENTS.md exists but migration is incomplete
+- Do NOT proceed to Phase 3 until every meaningful AGENTS.md section is mapped to a destination
+- Use [[TEMPLATES/migration-map]] to track section-level coverage
+- Mark unknown or risky mappings explicitly and escalate to the human
 
 ---
 

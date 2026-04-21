@@ -41,10 +41,15 @@ claude
 ### Option B: With any AI agent
 
 Open `INSTALL.md` and follow the phases. Feed each phase file to your AI agent sequentially.
+Before Phase 2, explicitly choose mode: `strict` (default) or `adaptive`.
 
 ## What You Get
 
-After installation, your repo will have:
+This installer supports two output modes.
+
+### Strict mode (default)
+
+Creates a full standardized documentation skeleton:
 
 ```
 your-repo/
@@ -59,6 +64,22 @@ your-repo/
 │   ├── testing/           # Testing knowledge
 │   └── reference/         # Stable reference docs
 ```
+
+### Adaptive mode
+
+Creates only categories justified by repo analysis (example):
+
+```
+your-repo/
+├── CLAUDE.md
+├── docs/
+│   ├── _index.md
+│   ├── project/
+│   ├── architecture/
+│   └── features/
+```
+
+In both modes, files must contain real content. No empty placeholders.
 
 ## Philosophy
 
@@ -75,7 +96,7 @@ your-repo/
 | [[PRINCIPLES]] | Design principles and decision framework |
 | [[CONTRIBUTING]] | Contributor guidelines |
 | [[CHANGELOG]] | Version tracking |
-| `TEMPLATES/` | Document structure templates (not content) |
+| `TEMPLATES/` | Document structure templates, including migration mapping |
 | `PHASES/` | Sequential execution phases |
 
 ## After Installation

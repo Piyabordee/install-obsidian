@@ -59,6 +59,24 @@ If existing docs (AGENTS.md, README, etc.) have valuable information:
 - Show what gets linked vs. rewritten
 - Propose whether to keep, redirect, or remove existing docs
 
+If `AGENTS.md` exists, this mapping is mandatory and must be section-by-section.
+Use [[TEMPLATES/migration-map]] and include every meaningful section.
+
+Required AGENTS mapping table:
+
+```markdown
+### AGENTS.md Section Mapping (mandatory if AGENTS.md exists)
+| AGENTS.md section | Destination file | Destination section | Migration method (link/rewrite/keep) | Status |
+|-------------------|------------------|---------------------|----------------------------------------|--------|
+| [section name] | [[docs/...]] | [heading] | rewrite | mapped |
+```
+
+Rules:
+- Every meaningful AGENTS.md section must appear in this table
+- `Status` must be `mapped` for all rows before Phase 3
+- If a section cannot be mapped, stop and request human guidance
+- Do NOT proceed to [[PHASES/03-implement]] with partial mapping
+
 Include a **Files Marked for Removal** section:
 
 ```markdown
@@ -98,6 +116,9 @@ Present your design as:
 ### Migration Plan (if applicable)
 [where existing info goes]
 
+### AGENTS.md Migration Coverage
+[100% required if AGENTS.md exists; otherwise "not applicable"]
+
 ### Priority Order
 [creation sequence]
 
@@ -117,3 +138,4 @@ Wait for the human to approve or request changes before proceeding to [[PHASES/0
 - [[PHASES/03-implement]] — Next phase: create the docs
 - [[TEMPLATES/hub-claude-md]] — Template for CLAUDE.md hub
 - [[TEMPLATES/index-doc]] — Template for docs/_index.md navigation
+- [[TEMPLATES/migration-map]] — Template for section-by-section migration planning
