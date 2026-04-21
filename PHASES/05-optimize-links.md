@@ -21,7 +21,7 @@ Treat a link as valueless when it does not improve navigation or understanding, 
 
 - Duplicate link to the same target within one section where one link is enough
 - Placeholder-style links (example-only targets) left in final docs
-- Circular noise links that add no context (A links to B and back with no new value)
+- Reciprocal links with no added context (A links to B and B links back without new value)
 - Broad hub spam (too many low-signal links in one paragraph)
 
 Do NOT remove links that are needed for navigation, provenance, or safety context.
