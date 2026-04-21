@@ -27,7 +27,7 @@ You are installing an Obsidian-compatible documentation system into this reposit
 
 Choose one mode before Phase 2 and include it in the design proposal.
 
-### Mode: `strict`
+### Mode: `strict` (full-standard structure)
 - Create the standard category structure from [[README]]: `project`, `architecture`, `features`, `integrations`, `build`, `testing`, `reference`
 - Create at least one real-content doc in each category, or explicitly link existing docs that satisfy the category
 - Use this mode when the human expects the full standardized structure

@@ -69,7 +69,7 @@ If `AGENTS.md` exists:
    - `verified migrated sections: X/Y`
    - `unmapped or uncertain sections: [list]`
 4. Gate rule: coverage must be `Y/Y` (100%) before implementation can be considered complete
-5. If any section is unmapped or uncertain, mark implementation as failed and return to migration work
+5. If any section is unmapped or uncertain, mark implementation as incomplete and return to migration work
 
 ### 3.7 Final Verification
 
