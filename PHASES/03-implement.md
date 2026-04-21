@@ -58,7 +58,20 @@ Per the approved migration plan:
 - Do NOT delete anything the human hasn't explicitly approved for deletion
 - If in doubt, preserve and link
 
-### 3.6 Final Verification
+### 3.6 Migration Coverage Gate (AGENTS.md)
+
+If `AGENTS.md` exists:
+
+1. Use the Phase 2 mapping table (or [[TEMPLATES/migration-map]]) as the source of truth
+2. Verify each mapped section exists in its destination file/section
+3. Produce a coverage summary:
+   - `mapped sections: X/Y`
+   - `verified migrated sections: X/Y`
+   - `unmapped or uncertain sections: [list]`
+4. Gate rule: coverage must be `Y/Y` (100%) before implementation can be considered complete
+5. If any section is unmapped or uncertain, mark implementation as incomplete and return to migration work
+
+### 3.7 Final Verification
 
 After creating all docs:
 
@@ -70,6 +83,8 @@ After creating all docs:
 - [ ] Doc Workflow section exists in CLAUDE.md
 - [ ] No hardcoded assumptions from other repos
 - [ ] No information was lost from existing docs (if migration)
+- [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
+- [ ] Migration evidence includes section-level destinations (not only file-level)
 
 ---
 
@@ -91,6 +106,11 @@ Present the result:
 
 ### Verification
 - [checklist results]
+
+### Migration Coverage (if AGENTS.md exists)
+- mapped sections: [X/Y]
+- verified migrated sections: [X/Y]
+- unresolved sections: [list or "none"]
 ```
 
 Wait for the human's final review.
@@ -109,3 +129,4 @@ Wait for the human's final review.
 - [[TEMPLATES/reference-doc]] — Reference doc template
 - [[TEMPLATES/hub-claude-md]] — CLAUDE.md hub template
 - [[TEMPLATES/index-doc]] — Index doc template
+- [[TEMPLATES/migration-map]] — Migration mapping template
