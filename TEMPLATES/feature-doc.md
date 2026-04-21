@@ -30,8 +30,8 @@ Only include files that are NOT obvious from the feature name.]
 Table format: config key, default, purpose.]
 
 ## Design Origin
-- Spec: [[docs/superpowers/specs/YYYY-MM-DD-<name>-design]]
-- Plan: [[docs/superpowers/plans/YYYY-MM-DD-<name>]]
+- Spec: [[path-to-spec]]
+- Plan: [[path-to-plan]]
 (Include only if a spec/plan exists. Omit entire section if not.)
 
 ---

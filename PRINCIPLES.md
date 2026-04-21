@@ -71,8 +71,8 @@ When a feature doc was created from a design spec or implementation plan, add a 
 
 ```markdown
 ## Design Origin
-- Spec: [[docs/superpowers/specs/YYYY-MM-DD-<name>-design]]
-- Plan: [[docs/superpowers/plans/YYYY-MM-DD-<name>]]
+- Spec: [[path-to-spec]]
+- Plan: [[path-to-plan]]
 ```
 
 This helps AI agents understand where a feature came from and find the original design decisions.
