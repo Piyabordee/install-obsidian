@@ -51,6 +51,13 @@ Before Phase 2, explicitly choose mode: `strict` (default) or `adaptive`.
 
 This installer supports two output modes.
 
+### Core outputs in both modes
+
+- `CLAUDE.md` as the project operational hub
+- `docs/_index.md` as the documentation navigation hub
+- `./.claude/rules/stable-rules.md` and `./.claude/rules/security-rules.md` for stable/non-negotiable constraints
+- `decisions.md` for persistent design decisions across sessions
+
 ### Strict mode (default)
 
 Creates a full standardized documentation skeleton:
@@ -100,6 +107,9 @@ In both modes, files must contain real content. No empty placeholders.
 | [[PRINCIPLES]] | Design principles and decision framework |
 | [[CONTRIBUTING]] | Contributor guidelines |
 | [[CHANGELOG]] | Version tracking |
+| `CLAUDE.md` | Operational hub used by AI agents |
+| `decisions.md` | Persistent design decision log |
+| `.claude/rules/` | Stable project and security rules |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
 | `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Cleanup → Optimize Links) |
 
