@@ -94,7 +94,12 @@ After creating all docs:
 - [ ] CLAUDE.md links to every doc in the Documentation Map
 - [ ] docs/_index.md links to every doc
 - [ ] Every doc has a Related section with at least 2 links
+- [ ] Every created doc (except hub and index) has a "## When to Read This" section
+- [ ] Every "When to Read This" has both Trigger and Read With subsections
+- [ ] Every Read With entry uses the dual format: `path/file.md` [[wiki-link]] — reason
 - [ ] Doc Workflow section exists in CLAUDE.md
+- [ ] CLAUDE.md hub has a "## Task Routing" table derived from all Trigger sections
+- [ ] Task Routing table uses backtick paths (not wiki links) for AI navigation
 - [ ] CLAUDE.md contains an authoritative directory tree
 - [ ] Stable rules exist in `./.claude/rules/` and are not mixed into CLAUDE.md
 - [ ] decisions.md exists and includes key design choices

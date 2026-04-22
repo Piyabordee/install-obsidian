@@ -17,6 +17,16 @@
 ## Overview
 [What is the testing strategy? What matters most in this project's tests?]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Test Structure
 [How tests are organized — directories, naming conventions, file patterns.
 Table of test directories and what they cover.]

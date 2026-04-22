@@ -17,6 +17,16 @@
 ## Overview
 [What does the build produce? What platforms are targeted?]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Prerequisites
 [Tools and versions required to build.
 Table of tool, minimum version, and purpose.]
