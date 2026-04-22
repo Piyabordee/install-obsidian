@@ -84,6 +84,21 @@ This helps AI agents understand where a feature came from and find the original 
 - Spoke docs should connect to related spokes
 - But never add links that don't help navigation — visual prettiness is secondary
 
+### 8. Every doc must answer "when should I read this?"
+
+Before an AI agent can use a doc, it needs to know when to load it into context.
+Every doc (except hub and index docs) must include:
+
+- **Trigger** — task-based situations that require this doc
+- **Read With** — sibling docs needed alongside this one
+
+Link format in Read With must always be dual:
+`path/to/file.md` [[wiki-link]] — reason
+
+This serves both purposes simultaneously:
+- `backtick path` → AI agent navigates to real file
+- `[[wiki-link]]` → Obsidian graph draws the edge
+
 ---
 
 ## Category Guide
@@ -112,6 +127,7 @@ Not every repo needs every category. Create only what the codebase justifies.
 | Empty docs "for completeness" | Worse than no docs — misleading |
 | Static hardcoded paths in templates | Breaks when used in different repos |
 | No links between docs | Isolated nodes, graph is useless |
+| "Related" section with wiki links only | AI can't tell when or why to follow the link |
 
 ---
 

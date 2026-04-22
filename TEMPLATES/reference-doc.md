@@ -17,6 +17,16 @@
 ## Overview
 [Brief explanation of what this system/concept is.]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Reference Table
 [Primary content — table of entries with their values, locations, and purposes.
 This is the main value of a reference doc.]

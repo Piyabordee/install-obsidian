@@ -17,6 +17,16 @@
 ## Overview
 [What is this tool? Why was it chosen? What role does it play in the project?]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Setup
 [How to install, configure, or authenticate this tool.
 Include version requirements if relevant.]

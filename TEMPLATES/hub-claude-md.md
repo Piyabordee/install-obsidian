@@ -37,6 +37,16 @@
 
 ---
 
+## Task Routing
+
+> If you are working on X → read Y first.
+
+| Task | Read First |
+|------|------------|
+| [task type] | `path/to/file.md` |
+
+---
+
 ## Directory Tree (Authoritative)
 
 ```text
@@ -165,6 +175,9 @@ At the end of each work session:
 - Doc Workflow section must exist so AI knows to auto-create docs
 - Include and maintain a directory tree to reduce path confusion
 - Add/maintain a DoD + Session Closeout section
+- For Task Routing rows, derive tasks from Trigger sections across created docs
+- Use one row per distinct task type
+- In Task Routing, use real backtick file paths (not wiki links) in the Read First column
 
 ---
 

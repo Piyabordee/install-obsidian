@@ -17,6 +17,16 @@
 ## Overview
 [What is this feature? Why does it exist? What problem does it solve?]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Flow / User Journey
 [Step-by-step walkthrough of how a user interacts with this feature.
 Use numbered steps or a sequence diagram if helpful.]

@@ -17,6 +17,16 @@
 ## Overview
 [The main content — varies by topic:]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ### For overview.md:
 - Project identity (name, type, repo URL)
 - Stack/technology table

@@ -17,6 +17,16 @@
 ## Overview
 [What is this architectural pattern/layer/subsystem?]
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Structure
 [Visual representation — tree diagram, layer diagram, or composition table.
 Show how parts relate to each other.]

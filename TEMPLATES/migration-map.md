@@ -14,6 +14,16 @@
 
 ---
 
+## When to Read This
+
+### Trigger
+
+- (fill from doc content)
+
+### Read With
+
+- `path/to/file.md` [[wiki-link]] — reason
+
 ## Scope
 - Source files: [e.g., AGENTS.md, old-doc.md]
 - Migration mode: [strict/adaptive]
