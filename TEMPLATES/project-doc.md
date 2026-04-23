@@ -17,6 +17,9 @@
 ## Overview
 [The main content — varies by topic:]
 
+## Context Snapshot
+[2-5 bullets: current scope, boundaries, assumptions, and constraints relevant to this topic.]
+
 ## When to Read This
 
 ### Trigger
@@ -48,6 +51,13 @@
 - Known limitations
 - Technical debt items
 
+## Decision Trace
+(Optional — add only when there are non-obvious project decisions.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what changes for contributors/users]
+
 ---
 
 Related: [[linked-doc-1]] | [[linked-doc-2]]
@@ -59,6 +69,8 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - overview.md should be the first doc any newcomer reads
 - repository-map.md should explain WHY folders exist, not just list them
 - known-issues.md should be honest — don't hide problems
+- Keep Context Snapshot short and high-signal (avoid full history dumps)
+- Use Decision Trace only for decisions that affect future work
 
 ---
 

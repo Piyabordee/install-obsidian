@@ -17,6 +17,9 @@
 ## Overview
 [What is this feature? Why does it exist? What problem does it solve?]
 
+## Context Snapshot
+[Scope, boundaries, and assumptions for this feature in its current state.]
+
 ## When to Read This
 
 ### Trigger
@@ -39,6 +42,13 @@ Only include files that are NOT obvious from the feature name.]
 [Any config options related to this feature.
 Table format: config key, default, purpose.]
 
+## Decision Trace
+(Optional — only for meaningful product/engineering tradeoffs.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what implementers/operators must know]
+
 ## Design Origin
 - Spec: [[path-to-spec]]
 - Plan: [[path-to-plan]]
@@ -55,6 +65,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - **Key Files** should explain WHY each file matters, not just list them
 - **Configuration** is optional — omit if feature has no config
 - Every feature doc should link to at least one architecture doc
+- Keep docs small and focused; split only when retrieval quality improves
 
 ---
 

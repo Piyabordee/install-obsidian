@@ -38,6 +38,7 @@ install-obsidian/
 1. **Stable rules (immutable)**: read all files in `./.claude/rules/` first.
 2. **Operational rules (editable)**: use this `CLAUDE.md` for workflow/navigation.
 3. **Task-specific instructions**: follow user instructions in current session.
+4. **Hybrid strategy**: preserve installer core requirements; apply llm-wiki-inspired practices as a complementary layer.
 
 ---
 

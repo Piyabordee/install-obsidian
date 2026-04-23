@@ -7,7 +7,19 @@
 
 ## Core Principles
 
-### 1. Docs follow the codebase, not the other way around
+### 1. Hybrid by design: installer core + inspired knowledge practices
+
+Keep the install-obsidian core intact (phase flow, stable rules, migration safety, practical gates),
+and apply llm-wiki-inspired practices as a complementary layer:
+
+- Modular docs (small, focused topics)
+- Cross-linking for usable graph navigation
+- Living knowledge that updates with real changes
+- Context/rationale-first explanations
+
+The inspired layer must not replace or weaken installer requirements.
+
+### 2. Docs follow the codebase, not the other way around
 
 Documentation structure must reflect the ACTUAL repo structure. Do not impose a predefined folder tree. Instead:
 
@@ -15,7 +27,7 @@ Documentation structure must reflect the ACTUAL repo structure. Do not impose a 
 - Identify real subsystems, workflows, and important files
 - Create docs only where they add genuine value
 
-### 2. Hub-and-spoke architecture
+### 3. Hub-and-spoke architecture
 
 ```
 CLAUDE.md (hub)
@@ -30,7 +42,7 @@ CLAUDE.md (hub)
 - **docs/_index.md** = second door. Full navigation map.
 - **Category folders** = rooms. Each doc = one focused topic.
 
-### 3. Every doc earns its existence
+### 4. Every doc earns its existence
 
 Before creating a doc, answer:
 
@@ -40,13 +52,13 @@ Before creating a doc, answer:
 
 If the answer to all three is "no", do not create it.
 
-### 4. Link generously, duplicate never
+### 5. Link generously, duplicate never
 
 - Use wiki links: `[[docs/project/overview]]`
 - When information exists elsewhere, link to it instead of rewriting it
 - Every doc should have a `Related:` section at the bottom
 
-### 5. CLAUDE.md is for AI onboarding
+### 6. CLAUDE.md is for AI onboarding
 
 CLAUDE.md should contain ONLY:
 
@@ -65,7 +77,7 @@ CLAUDE.md should NOT contain:
 - Code examples
 - Troubleshooting guides
 
-### 6. Design Origin tracks provenance
+### 7. Design Origin tracks provenance
 
 When a feature doc was created from a design spec or implementation plan, add a `## Design Origin` section:
 
@@ -77,14 +89,14 @@ When a feature doc was created from a design spec or implementation plan, add a 
 
 This helps AI agents understand where a feature came from and find the original design decisions.
 
-### 7. Optimize for the graph, but usefulness first
+### 8. Optimize for the graph, but usefulness first
 
 - Wiki links make Obsidian graph meaningful
 - Hub docs (CLAUDE.md, _index.md) should connect to many spokes
 - Spoke docs should connect to related spokes
 - But never add links that don't help navigation — visual prettiness is secondary
 
-### 8. Every doc must answer "when should I read this?"
+### 9. Every doc must answer "when should I read this?"
 
 Before an AI agent can use a doc, it needs to know when to load it into context.
 Every doc (except hub and index docs) must include:
@@ -98,6 +110,16 @@ Link format in Read With must always be dual:
 This serves both purposes simultaneously:
 - `backtick path` → AI agent navigates to real file
 - `[[wiki-link]]` → Obsidian graph draws the edge
+
+### 10. Context and rationale beat file-summary dumps
+
+Each substantive doc should capture context that code alone does not explain:
+
+- Why this approach exists
+- What tradeoffs were accepted
+- What to preserve when changing it
+
+If a section only repeats obvious file content, replace it with links or remove it.
 
 ---
 
@@ -128,6 +150,8 @@ Not every repo needs every category. Create only what the codebase justifies.
 | Static hardcoded paths in templates | Breaks when used in different repos |
 | No links between docs | Isolated nodes, graph is useless |
 | "Related" section with wiki links only | AI can't tell when or why to follow the link |
+| Too many low-value docs created "just in case" | Knowledge drift, maintenance burden, weak signal |
+| File-by-file summaries without rationale | Not useful for decision-making or onboarding |
 
 ---
 

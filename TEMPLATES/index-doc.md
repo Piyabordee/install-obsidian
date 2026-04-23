@@ -64,6 +64,13 @@
 ## External Resources
 
 - [Link to external docs, APIs, etc. if applicable]
+
+## Optional: Decision Notes
+(Only if index structure is intentionally non-obvious.)
+
+- Decision: [what navigation choice was made]
+- Why: [reason/tradeoff]
+- Impact: [how readers should use this index]
 ```
 
 ## Guidelines
@@ -73,6 +80,7 @@
 - **Organize by category** matching the folder structure under `docs/`
 - **Description should answer** "what will I learn by reading this?"
 - Keep this file compact — it's a map, not an encyclopedia
+- Prefer signal over volume: do not add low-value entries just to fill categories
 
 ---
 

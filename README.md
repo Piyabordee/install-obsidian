@@ -19,6 +19,15 @@ This is **not** a traditional installer. It is a set of Markdown instructions th
 
 The result: your repo gains a living knowledge base that both humans and AI can navigate.
 
+## Hybrid Strategy (Core + Inspired Layer)
+
+This project uses a **hybrid** approach:
+
+- **Core (install-obsidian, non-negotiable):** phase-based installer flow, stable rules, migration safety, and practical completion gates
+- **Inspired layer (llm-wiki style):** smaller knowledge units, high-signal cross-links, living docs, and rationale-first writing
+
+The inspired layer is an enhancement, not a replacement for the installer core.
+
 ## How to Use
 
 ### Option A: With Claude Code
@@ -98,6 +107,7 @@ In both modes, files must contain real content. No empty placeholders.
 - **Hub-and-spoke** — CLAUDE.md is the front door, docs/ are the rooms
 - **Graph-friendly** — Wiki links between docs make Obsidian graph useful
 - **Minimal** — Only creates docs where real knowledge exists, no empty placeholders
+- **Context-first** — explain why decisions and workflows exist, not only where files are
 
 ## Folder Contents
 

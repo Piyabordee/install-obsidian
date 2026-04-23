@@ -98,6 +98,15 @@ List docs in creation order (most useful first):
 2. `[second doc]` — why second
 3. ...
 
+### 2.5 Hybrid Fit Check (required)
+
+Add a brief check before Phase 3:
+
+- **Core preserved:** phase gates, stable rules separation, migration safeguards remain intact
+- **Inspired layer applied:** docs are modular, linked, living, and context/rationale-driven
+- **Drift guard:** no category/doc exists only because a template suggested it
+- **Signal check:** proposed doc count is justified by repo complexity
+
 ---
 
 ## Output
@@ -124,6 +133,9 @@ Present your design as:
 
 ### Estimated Docs Count
 [N docs to create]
+
+### Hybrid Fit Check
+[pass/fail + short rationale]
 ```
 
 Wait for the human to approve or request changes before proceeding to [[PHASES/03-implement]].

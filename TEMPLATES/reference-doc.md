@@ -17,6 +17,9 @@
 ## Overview
 [Brief explanation of what this system/concept is.]
 
+## Context Snapshot
+[Scope and assumptions for this reference topic.]
+
 ## When to Read This
 
 ### Trigger
@@ -40,6 +43,13 @@ This is the main value of a reference doc.]
 ## Common Mistakes
 (If applicable — pitfalls that developers commonly hit.)
 
+## Decision Trace
+(Optional — include only reference-level decisions with lasting impact.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what users/maintainers should preserve]
+
 ---
 
 Related: [[linked-doc-1]] | [[linked-doc-2]]
@@ -51,6 +61,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Values should come from actual code, not assumptions
 - "How It Works" should explain the WHY, not just the WHAT
 - Reference docs are stable — they change less frequently than feature docs
+- Keep entries high-signal; avoid duplicating values already obvious from nearby docs
 
 ---
 

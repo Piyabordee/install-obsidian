@@ -76,6 +76,15 @@ Build a complete mental model of the repository by analyzing its actual structur
 - What docs have valuable information that should be preserved?
 - What docs are outdated or empty?
 - Is there an existing CLAUDE.md or AGENTS.md?
+
+### 1.7 Hybrid Fit Notes
+
+```
+- Identify where modular docs would improve clarity (without creating noise)
+- Identify where rationale/decision context is missing from existing docs
+- Identify likely cross-link hubs needed for graph usefulness
+- Flag areas where doc duplication risk is high
+```
 ```
 
 ---
@@ -113,6 +122,9 @@ Present your findings as a structured analysis:
 
 ### Recommended Doc Categories
 [Which categories from PRINCIPLES.md are justified?]
+
+### Hybrid Fit
+[How to apply inspired-layer improvements without replacing installer core requirements]
 ```
 
 Wait for the human to acknowledge your analysis before proceeding to [[PHASES/02-design]].
