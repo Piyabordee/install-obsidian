@@ -28,6 +28,7 @@
 - Source files: [e.g., AGENTS.md, old-doc.md]
 - Migration mode: [strict/adaptive]
 - Owner: [human/agent]
+- Hybrid intent: [how installer core is preserved while inspired-layer improvements are applied]
 
 ## Section Mapping
 | Source file | Source section | Destination file | Destination section | Migration method (rewrite/link/keep) | Verification evidence | Status |
@@ -46,6 +47,10 @@ Status values:
 - Verified sections: [N]
 - Uncertain/blocked sections: [list or "none"]
 
+## Drift Guard Notes
+- [confirm no duplicate-topic docs were introduced during migration]
+- [confirm key rationale context was preserved, not only file references]
+
 ## Removal Candidates
 | File | Eligible for removal? | Reason | Preconditions |
 |------|------------------------|--------|---------------|
@@ -62,6 +67,7 @@ Related: [[PHASES/02-design]] | [[PHASES/03-implement]] | [[PHASES/04-cleanup]]
 - Do not mark a file removable until all meaningful sections are verified
 - Keep uncertain mappings visible and unresolved until human confirms
 - Reuse this map in Phase 2 planning, Phase 3 verification, and Phase 4 cleanup
+- Validate that migrated docs stay practical and high-signal (no template-only content)
 
 ---
 

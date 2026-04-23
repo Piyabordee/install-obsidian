@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - .claude/rules/stable-rules.md — stable project constraints separated from CLAUDE.md
 - decisions.md — persistent design decision log for context resets
 - PHASES/05-optimize-links.md — final phase for link-quality optimization in `CLAUDE.md` + `docs/`
+- Hybrid strategy guidance across docs: preserve installer core and apply llm-wiki-inspired practices as a complementary layer
+- Hybrid practicality gates and drift-guard checkpoints in installation workflow phases
+- Template-level support for context/rationale capture and lightweight decision trace
 
 ### Changed
 - INSTALL.md now requires installation mode selection (`strict` default or `adaptive`)
@@ -25,6 +28,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TEMPLATES/hub-claude-md.md now requires stable rules in `./.claude/rules/`, directory tree, DoD, and session closeout
 - INSTALL.md and PHASES/03-implement.md now include stable rules separation, decisions.md, and verification/closeout expectations
 - INSTALL.md and README.md now include a final Optimize Links phase for duplicate/valueless link cleanup
+- README.md now explicitly defines the hybrid model (`install-obsidian core` + `llm-wiki-inspired` layer)
+- PRINCIPLES.md now adds hybrid doctrine and context/rationale-first anti-drift principles
+- PHASES/01-05 now include systematic + flexible checkpoints and stronger anti-duplication guidance
 
 ## [1.0.0] - 2026-04-18
 

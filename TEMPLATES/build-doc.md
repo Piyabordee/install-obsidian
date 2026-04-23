@@ -17,6 +17,9 @@
 ## Overview
 [What does the build produce? What platforms are targeted?]
 
+## Context Snapshot
+[Build scope, supported environments, and known boundaries.]
+
 ## When to Read This
 
 ### Trigger
@@ -49,6 +52,13 @@ Only if applicable to the project.]
 ## Troubleshooting
 [Common build failures and how to fix them.]
 
+## Decision Trace
+(Optional — for build/release choices that should persist.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what release/build operators must follow]
+
 ---
 
 Related: [[linked-doc-1]] | [[linked-doc-2]]
@@ -59,6 +69,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Include exact commands — this doc is a reference people follow step-by-step
 - **Troubleshooting** should cover real failures, not hypothetical ones
 - Only create this doc if the build process is non-trivial
+- Keep command sections lean; remove duplicated command variants with no value
 
 ---
 

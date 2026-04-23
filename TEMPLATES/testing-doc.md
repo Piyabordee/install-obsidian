@@ -17,6 +17,9 @@
 ## Overview
 [What is the testing strategy? What matters most in this project's tests?]
 
+## Context Snapshot
+[Test boundaries, confidence goals, and what this topic does not cover.]
+
 ## When to Read This
 
 ### Trigger
@@ -45,6 +48,13 @@ Include any special flags or environment setup needed.]
 ## Coverage Expectations
 [What areas must have tests? What's acceptable to skip?]
 
+## Decision Trace
+(Optional — use for durable test policy/tradeoff decisions.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what contributors should do differently]
+
 ---
 
 Related: [[linked-doc-1]] | [[linked-doc-2]]
@@ -55,6 +65,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Focus on project-specific conventions, not general testing theory
 - **Writing New Tests** is the most valuable section — it guides contributors
 - Only create this doc if testing approach is non-trivial or non-obvious
+- Keep policy clear and short; avoid turning this doc into generic QA theory
 
 ---
 

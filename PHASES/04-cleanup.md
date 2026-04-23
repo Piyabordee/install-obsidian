@@ -32,6 +32,7 @@ Also detect any additional files that may now be redundant:
     - Mark as `verified` only if all meaningful content has been migrated
     - Record section-level evidence (source heading -> destination file/heading)
 3. **Flag uncertainties** — if any content might have been lost, mark as `uncertain`
+4. **Protect rationale context** — do not mark files removable if unique decision context has not been migrated
 
 If the file is `AGENTS.md`, section-level verification is mandatory and must reference
 the mapping produced in [[PHASES/02-design]] (recommended format: [[TEMPLATES/migration-map]]).
@@ -98,6 +99,7 @@ After receiving confirmation for each item:
 - [ ] No referenced files were accidentally deleted
 - [ ] docs/_index.md still links to valid files
 - [ ] CLAUDE.md Documentation Map still links to valid files
+- [ ] No unique rationale/decision context was removed during cleanup
 
 ---
 

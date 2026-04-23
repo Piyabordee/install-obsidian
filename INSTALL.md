@@ -15,6 +15,15 @@ You are installing an Obsidian-compatible documentation system into this reposit
 4. **Clean up** installer artifacts and obsolete files (optional, user-approved)
 5. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
 
+## Hybrid Operating Model (mandatory)
+
+Execute all work with this model:
+
+- **Installer core (required):** keep phase order, approval gates, stable rules separation, migration safety, and validation checklists
+- **Inspired layer (recommended):** create small focused docs, preserve meaningful cross-links, keep docs as living knowledge, and write context/rationale first
+
+Do not treat the inspired layer as a replacement for installer core requirements.
+
 ## Constraints
 
 - **Do NOT create empty placeholder files** — every doc must have real content
@@ -23,6 +32,8 @@ You are installing an Obsidian-compatible documentation system into this reposit
 - **Do NOT skip human approval** — present your design before implementing
 - **Do NOT overwrite existing docs** unless the human explicitly approves
 - **Do NOT mix stable rules into CLAUDE.md** — keep stable rules in `./.claude/rules/`
+- **Do NOT create low-signal doc sprawl** — every new doc must have clear value and maintenance intent
+- **Do NOT replace rationale with file summaries** — capture why/tradeoffs, not only where code lives
 
 ## Installation Mode (required)
 
@@ -63,6 +74,15 @@ If the human does not specify a mode, default to `strict`.
 9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
 10. Read [[PHASES/05-optimize-links]] and run final link optimization pass
 
+### Hybrid Practicality Gate (apply in every phase)
+
+Before moving to the next phase, verify:
+
+1. **Systematic**: required phase outputs and checks are complete
+2. **Flexible**: chosen docs reflect repo reality, not template pressure
+3. **Signal over volume**: no unnecessary doc proliferation
+4. **Rationale present**: important docs include context/decision reasoning
+
 ## Templates
 
 Use files in [[TEMPLATES/]] as structure guides. Each template defines:
@@ -100,6 +120,7 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 - [ ] No empty placeholder files or hardcoded assumptions
 - [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
 - [ ] Link optimization completed for `CLAUDE.md` + `docs/` (duplicate/valueless links removed)
+- [ ] Hybrid practicality gate passed at each phase (systematic + flexible + high-signal + rationale-first)
 
 ## Definition of Done
 
@@ -115,6 +136,7 @@ Installation is complete only when all of the following are true:
 6. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
 7. Final link optimization pass completed on `CLAUDE.md` + `docs/`
 8. Post-install validation checklist is complete with no unresolved critical failures
+9. Hybrid model is respected: installer core preserved and inspired layer applied without drift
 
 ## Post-Install Validation (mandatory)
 
@@ -136,6 +158,8 @@ Run this checklist before closing the installation:
 - [ ] Cleanup decisions were human-approved item by item
 - [ ] Duplicate/valueless wiki links were removed from `CLAUDE.md` and `docs/`
 - [ ] Link graph remains navigable and hub docs are still connected
+- [ ] No low-signal doc sprawl or duplicate-topic docs were introduced
+- [ ] Key docs include context/rationale where code alone is insufficient
 
 ---
 

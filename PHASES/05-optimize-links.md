@@ -57,6 +57,7 @@ Edit only what improves signal:
 2. Remove valueless links
 3. Keep at least core navigational links for each doc (hub/index/related)
 4. Preserve links required for migration evidence, warnings, and design origin
+5. Preserve links that provide high-value rationale context even if they are not structural hubs
 
 ### 5.4 Graph Cleanliness Check
 
@@ -88,6 +89,7 @@ Present:
 - [ ] no broken wiki links
 - [ ] hub docs still connected
 - [ ] graph readability improved
+- [ ] high-value context/rationale links preserved
 ```
 
 ---

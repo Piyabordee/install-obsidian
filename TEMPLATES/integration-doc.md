@@ -17,6 +17,9 @@
 ## Overview
 [What is this tool? Why was it chosen? What role does it play in the project?]
 
+## Context Snapshot
+[Environment assumptions, trust boundaries, and integration scope.]
+
 ## When to Read This
 
 ### Trigger
@@ -43,6 +46,13 @@ Table of config keys, values, and purposes.]
 [Common pitfalls when working with this integration in this project.
 Things that surprised the team.]
 
+## Decision Trace
+(Optional — include only integration choices that affect maintenance.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what changes for setup/operations]
+
 ---
 
 Related: [[linked-doc-1]] | [[linked-doc-2]]
@@ -54,6 +64,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - Focus on project-specific decisions, not general tool documentation
 - Include version constraints if the project is sensitive to versions
 - **Gotchas** should capture real problems encountered, not theoretical ones
+- Keep setup details practical; link out instead of duplicating vendor docs
 
 ---
 

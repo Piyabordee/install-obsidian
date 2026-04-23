@@ -87,6 +87,12 @@
 > Put only operational/session rules here.
 > Put stable rules in `./.claude/rules/`.
 
+## Hybrid Strategy
+
+- Preserve installer core requirements (phase flow, safety gates, stable rules separation)
+- Apply inspired-layer practices (modular docs, useful cross-links, living updates, rationale-first content)
+- Prefer high-signal docs; avoid low-value expansion
+
 ---
 
 ## Doc Workflow
@@ -178,6 +184,7 @@ At the end of each work session:
 - For Task Routing rows, derive tasks from Trigger sections across created docs
 - Use one row per distinct task type
 - In Task Routing, use real backtick file paths (not wiki links) in the Read First column
+- If adding hybrid guidance, keep it short and operational (not conceptual essays)
 
 ---
 

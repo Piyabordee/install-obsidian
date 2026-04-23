@@ -36,12 +36,14 @@ For each approved doc:
 3. **Add wiki links** to related docs
 4. **Add Design Origin** if the feature has a spec/plan
 5. **Add Related section** at the bottom
+6. **Add context/rationale** where decisions are not obvious from code
 
 Rules while writing:
 - Every paragraph must contain information NOT obvious from the code
 - Every doc must link to at least 2 other docs
 - No doc should be a copy of something that already exists elsewhere
 - Use the repo's actual terminology, not generic terms
+- Keep each doc focused; split only when it improves retrieval and maintenance
 
 ### 3.4 Create CLAUDE.md
 
@@ -110,6 +112,9 @@ After creating all docs:
 - [ ] No information was lost from existing docs (if migration)
 - [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
 - [ ] Migration evidence includes section-level destinations (not only file-level)
+- [ ] Each major doc includes context/rationale, not only file summaries
+- [ ] No low-signal duplicate-topic docs were created
+- [ ] Hybrid model check passed (installer core preserved + inspired layer applied)
 
 ---
 

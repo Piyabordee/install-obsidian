@@ -17,6 +17,9 @@
 ## Overview
 [What is this architectural pattern/layer/subsystem?]
 
+## Context Snapshot
+[Current boundaries, constraints, and non-goals for this architecture area.]
+
 ## When to Read This
 
 ### Trigger
@@ -39,6 +42,13 @@ Only include non-obvious components.]
 [When someone needs to add to this architecture, what do they do?
 Step-by-step guide for common extension patterns.]
 
+## Decision Trace
+(Optional — keep to major tradeoffs only.)
+
+- Decision: [what was chosen]
+- Why: [reason/tradeoff]
+- Impact: [what contributors must preserve]
+
 ## Design Origin
 (Omit if not applicable)
 
@@ -53,6 +63,7 @@ Related: [[linked-doc-1]] | [[linked-doc-2]]
 - **How to Extend** is critical — it's the main reason this doc exists
 - Architecture docs should link to feature docs that implement the patterns
 - Do NOT list every file — only the ones that define the architecture
+- Keep Decision Trace concise; include only durable, high-impact choices
 
 ---
 

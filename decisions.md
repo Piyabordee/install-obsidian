@@ -19,3 +19,9 @@
 - **Decision**: add Definition of Done including `tsc --noEmit` for TypeScript repos and issue-scoped commits.
 - **Why**: improve consistency and reduce regressions.
 - **Impact**: agents must run verification and close every session with CLAUDE/decisions updates.
+
+## 2026-04-23 — Adopt hybrid documentation strategy (core + inspired layer)
+
+- **Decision**: preserve install-obsidian’s phase-based installer core, while adding llm-wiki-inspired practices as a complementary layer.
+- **Why**: keep strong operational safeguards (approval gates, migration safety, stable rules) while improving retrieval quality via modular docs, better graph links, living updates, and rationale-first writing.
+- **Impact**: README/INSTALL/PRINCIPLES/PHASES/TEMPLATES now enforce systematic-but-flexible behavior, drift prevention, and context-rich documentation expectations.
