@@ -18,11 +18,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hybrid strategy guidance across docs: preserve installer core and apply llm-wiki-inspired practices as a complementary layer
 - Hybrid practicality gates and drift-guard checkpoints in installation workflow phases
 - Template-level support for context/rationale capture and lightweight decision trace
+- Explicit `/install-obsidian:update <range>` delta-refresh specification with supported range formats and scoped output expectations
 
 ### Changed
 - INSTALL.md now requires installation mode selection (`strict` default or `adaptive`)
 - README.md now documents strict vs adaptive output expectations
 - INSTALL.md and README.md now document re-install behavior for already-installed repos (declare prior install, prefer targeted refresh/Phase 5, and avoid unnecessary AGENTS.md recreation when migration is complete)
+- INSTALL.md and PHASES/05-optimize-links.md now define delta-only refresh scope control for `/install-obsidian:update`
 - PHASES/02-design.md now requires full AGENTS.md section mapping before Phase 3
 - PHASES/03-implement.md now includes a 100% AGENTS.md migration coverage gate
 - PHASES/04-cleanup.md now requires section-level migration evidence before deleting AGENTS.md

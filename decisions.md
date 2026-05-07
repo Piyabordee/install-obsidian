@@ -31,3 +31,9 @@
 - **Decision**: require agents to acknowledge prior installation status and prefer targeted refresh runs instead of fully repeating Phases 1-3 when docs are already in place.
 - **Why**: reduce unnecessary churn and avoid duplicated work in repositories that have already completed installation and migration once.
 - **Impact**: INSTALL and README now instruct agents to announce prior install context, run focused updates (often Phase 5), and avoid recreating `AGENTS.md` when migration coverage is already complete.
+
+## 2026-05-07 — Define `/install-obsidian:update` as delta-only refresh mode
+
+- **Decision**: treat `/install-obsidian:update <range>` as a targeted documentation refresh that only updates delta derived from the specified commit window.
+- **Why**: make refresh behavior explicit, reduce accidental full reinstall work, and keep doc updates scoped to the code changes the human actually asked about.
+- **Impact**: README, INSTALL, and Phase 5 now define supported range inputs, scope-control rules, required output, and delta-first link optimization expectations.

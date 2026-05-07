@@ -51,6 +51,63 @@ Choose one mode before Phase 2 and include it in the design proposal.
 
 If the human does not specify a mode, default to `strict`.
 
+## Delta Update Mode (targeted refresh)
+
+Use `/install-obsidian:update <range>` when the repo was already installed and the goal is to update documentation only for a known commit delta.
+
+### Supported range inputs
+
+- `N` — last `N` commits, for example `/install-obsidian:update 3`
+- `from..to` — explicit SHA range, for example `/install-obsidian:update abc123..def456`
+- `since=... until=...` — optional time window when commit count or SHAs are inconvenient
+
+### Scope-control rules
+
+- Update only files and docs affected by the specified commit range
+- Do **NOT** automatically re-run Phases 1-3 in full
+- Prefer targeted refresh behavior that follows existing refresh-run guidance
+- If the delta reveals a breaking structural change, stop and ask the human before expanding scope
+
+### Delta processing flow
+
+1. Read the requested commit range
+2. Build a changed-file set and a per-file change summary
+3. Map changed files to affected docs/hubs/rules
+4. Prioritize update severity:
+   - `high` — API, behavior, config, security, structural changes
+   - `medium` — workflow, testing, build, integration changes
+   - `low` — formatting, comments, and other non-functional changes
+
+### Documentation update rules
+
+- Edit only the docs connected to the changed-file set
+- Preserve existing wiki-link conventions (`[[link]]`, no `.md` suffix inside wiki links)
+- Do not create empty placeholders
+- If the refresh is already narrow, run link optimization only for the touched area unless the human approves wider cleanup
+
+### Required output for `/install-obsidian:update`
+
+Present:
+
+- changed files and changed docs
+- untouched files/docs intentionally left unchanged
+- pending approvals or blockers
+- explicit `no doc update required` outcome when the delta has no meaningful documentation impact
+
+### Edge cases
+
+- Invalid or missing commit range → ask the human to restate it
+- Large delta beyond a reasonable targeted refresh → propose splitting into batches
+- Rename/move detected → map old and new paths before editing links
+- Structural drift beyond targeted refresh scope → stop and request approval for broader work
+
+### Acceptance criteria for update mode
+
+- The specified commit range produces a delta-only documentation update
+- No unrelated files are modified
+- Hub and doc links remain navigable after the refresh
+- The final report distinguishes changed docs, untouched docs, and pending approvals
+
 ## Phase Sequence
 
 | Phase | File | Description |
@@ -181,6 +238,7 @@ If the repo is a single-file project or lacks identifiable directories:
 - If this is a refresh run, do not re-run Phases 1-3 in full unless the human requests it.
 - Prefer targeted updates (for example, run only [[PHASES/05-optimize-links]]) when docs structure already exists.
 - Do not recreate `AGENTS.md` if the previous migration coverage was already complete.
+- If the human uses `/install-obsidian:update <range>`, treat it as a delta-only refresh request and limit changes to the specified commit window.
 
 ### Phase 1 analysis is incomplete
 - Report what you could and could not determine
