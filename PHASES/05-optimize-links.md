@@ -15,16 +15,6 @@ Optimize wiki-link structure in `CLAUDE.md` and all files under `docs/` so links
 - Phase 4: CLEANUP is complete (or explicitly skipped by the human)
 - Human approved entering final optimization pass
 
-### Delta-first precondition for `/install-obsidian:update`
-
-When the human requests `/install-obsidian:update <range>`, optimize links only for:
-
-- docs directly updated from that delta
-- hub files affected by those doc changes
-- adjacent links that must change because of rename/move handling
-
-Do **NOT** widen the pass to unrelated docs unless the human approves a broader refresh.
-
 ## What counts as a valueless link
 
 Treat a link as valueless when it does not improve navigation or understanding, for example:
@@ -44,8 +34,6 @@ Scan:
 
 - `CLAUDE.md`
 - `docs/**/*.md`
-
-For `/install-obsidian:update`, start with the changed-doc subset first and expand only when a touched hub requires it.
 
 Collect:
 
@@ -103,11 +91,6 @@ Present:
 - [ ] graph readability improved
 - [ ] high-value context/rationale links preserved
 ```
-
-For `/install-obsidian:update`, also include:
-
-- [ ] optimization stayed within the approved delta scope
-- [ ] unchanged docs were left untouched unless required for navigation safety
 
 ---
 
