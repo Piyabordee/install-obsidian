@@ -176,6 +176,12 @@ If the repo is a single-file project or lacks identifiable directories:
 - Add the Documentation Map and Doc Workflow sections if missing
 - Present the merge plan to the human for approval
 
+### Repo was already installed once (re-install / refresh run)
+- Ask the human to confirm: "This repo has already been installed once."
+- If this is a refresh run, do not re-run Phases 1-3 in full unless the human requests it.
+- Prefer targeted updates (for example, run only [[PHASES/05-optimize-links]]) when docs structure already exists.
+- Do not recreate `AGENTS.md` if the previous migration coverage was already complete.
+
 ### Phase 1 analysis is incomplete
 - Report what you could and could not determine
 - Mark uncertain findings explicitly

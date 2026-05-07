@@ -25,3 +25,9 @@
 - **Decision**: preserve install-obsidian’s phase-based installer core, while adding llm-wiki-inspired practices as a complementary layer.
 - **Why**: keep strong operational safeguards (approval gates, migration safety, stable rules) while improving retrieval quality via modular docs, better graph links, living updates, and rationale-first writing.
 - **Impact**: README/INSTALL/PRINCIPLES/PHASES/TEMPLATES now enforce systematic-but-flexible behavior, drift prevention, and context-rich documentation expectations.
+
+## 2026-05-07 — Define explicit re-install behavior for already-installed repos
+
+- **Decision**: require agents to acknowledge prior installation status and prefer targeted refresh runs instead of fully repeating Phases 1-3 when docs are already in place.
+- **Why**: reduce unnecessary churn and avoid duplicated work in repositories that have already completed installation and migration once.
+- **Impact**: INSTALL and README now instruct agents to announce prior install context, run focused updates (often Phase 5), and avoid recreating `AGENTS.md` when migration coverage is already complete.
