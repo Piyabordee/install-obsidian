@@ -60,6 +60,21 @@ If your repo was already installed once, tell the agent that explicitly.
 For refresh runs, prefer targeted updates (often Phase 5 link optimization) instead of repeating Phases 1-3 in full.
 You do not need to recreate `AGENTS.md` when prior migration coverage is already complete.
 
+For targeted refreshes, use `/install-obsidian:update <range>`.
+This means: update only the documentation delta for the specified commit window, not a full reinstall.
+
+Supported examples:
+
+- `/install-obsidian:update 3` → inspect only the last 3 commits
+- `/install-obsidian:update abc123..def456` → inspect a SHA range
+- `/install-obsidian:update since=2026-05-01 until=2026-05-07` → inspect a time window when timestamps are easier than SHAs
+
+Expected result:
+
+- changed files/docs that require updates
+- untouched areas that should remain unchanged
+- pending approvals when the delta implies a structural or high-risk documentation change
+
 ## What You Get
 
 This installer supports two output modes.

@@ -67,6 +67,11 @@ At the end of every session, run a final pass:
 2. Update `decisions.md` for any new lasting decisions
 3. Confirm links and paths still point to existing files
 
+## Refresh Update Mode
+
+- `/install-obsidian:update <range>` means delta-only refresh for the specified commit window.
+- Keep refresh edits scoped to affected docs/hubs; do not silently expand into a full reinstall flow.
+
 ---
 
 ## Related
