@@ -56,6 +56,10 @@ claude
 Open `INSTALL.md` and follow the phases. Feed each phase file to your AI agent sequentially.
 Before Phase 2, explicitly choose mode: `strict` (default) or `adaptive`.
 
+If your repo was already installed once, tell the agent that explicitly.
+For refresh runs, prefer targeted updates (often Phase 5 link optimization) instead of repeating Phases 1-3 in full.
+You do not need to recreate `AGENTS.md` when prior migration coverage is already complete.
+
 ## What You Get
 
 This installer supports two output modes.

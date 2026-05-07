@@ -19,6 +19,7 @@
 install-obsidian/
 ├── .claude/
 │   └── rules/
+│       ├── coding-behavior-rules.md
 │       ├── security-rules.md
 │       └── stable-rules.md
 ├── PHASES/
@@ -36,6 +37,9 @@ install-obsidian/
 ## Rule Layers
 
 1. **Stable rules (immutable)**: read all files in `./.claude/rules/` first.
+   - [[.claude/rules/stable-rules]] — project-wide stable rules
+   - [[.claude/rules/security-rules]] — security constraints
+   - [[.claude/rules/coding-behavior-rules]] — Karpathy-inspired coding behavior (think before coding, simplicity, surgical changes, goal-driven execution)
 2. **Operational rules (editable)**: use this `CLAUDE.md` for workflow/navigation.
 3. **Task-specific instructions**: follow user instructions in current session.
 4. **Hybrid strategy**: preserve installer core requirements; apply llm-wiki-inspired practices as a complementary layer.
