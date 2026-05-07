@@ -24,6 +24,16 @@ Execute all work with this model:
 
 Do not treat the inspired layer as a replacement for installer core requirements.
 
+## Claude Code Marketplace Mapping
+
+When installed through Claude Code Marketplace, this repository follows:
+
+- **Command**: `commands/install.md` (`/install-obsidian:install`)
+- **Agent**: `agents/install-obsidian-agent.md`
+- **Skill**: `skills/install-obsidian-skill/SKILL.md`
+
+This mapping is orchestration-only. Behavioral source of truth remains this file and `PHASES/`.
+
 ## Constraints
 
 - **Do NOT create empty placeholder files** — every doc must have real content

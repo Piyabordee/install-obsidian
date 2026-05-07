@@ -30,7 +30,23 @@ The inspired layer is an enhancement, not a replacement for the installer core.
 
 ## How to Use
 
-### Option A: With Claude Code
+### Option A: Claude Code Marketplace (Recommended)
+
+In Claude Code, install from Marketplace with:
+
+```text
+GitHub: Piyabordee/install-obsidian
+```
+
+Then run:
+
+```text
+/install-obsidian:install
+```
+
+This triggers the Marketplace command → agent → skill flow for this repository.
+
+### Option B: With Claude Code (manual clone)
 
 ```bash
 # 1. Clone this repository
@@ -51,7 +67,7 @@ claude
 > Read install-obsidian/INSTALL.md and follow the instructions
 ```
 
-### Option B: With any AI agent
+### Option C: With any AI agent
 
 Open `INSTALL.md` and follow the phases. Feed each phase file to your AI agent sequentially.
 Before Phase 2, explicitly choose mode: `strict` (default) or `adaptive`.
@@ -138,6 +154,10 @@ In both modes, files must contain real content. No empty placeholders.
 | [[CHANGELOG]] | Version tracking |
 | `CLAUDE.md` | Operational hub used by AI agents |
 | `decisions.md` | Persistent design decision log |
+| `.claude-plugin/` | Claude Code Marketplace plugin metadata |
+| `commands/` | Marketplace slash command entry points |
+| `agents/` | Marketplace task orchestration agents |
+| `skills/` | Marketplace reusable knowledge modules |
 | `.claude/rules/` | Stable project and security rules |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
 | `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Cleanup → Optimize Links) |

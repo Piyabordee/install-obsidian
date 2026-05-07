@@ -17,12 +17,23 @@
 
 ```text
 install-obsidian/
+├── .claude-plugin/
+│   ├── marketplace.json
+│   └── plugin.json
 ├── .claude/
 │   └── rules/
 │       ├── coding-behavior-rules.md
 │       ├── security-rules.md
 │       └── stable-rules.md
+├── agents/
+│   └── install-obsidian-agent.md
+├── commands/
+│   └── install.md
 ├── PHASES/
+├── skills/
+│   └── install-obsidian-skill/
+│       ├── README.md
+│       └── SKILL.md
 ├── TEMPLATES/
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
