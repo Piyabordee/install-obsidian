@@ -1,0 +1,33 @@
+{
+  "name": "install-obsidian",
+  "description": "Install and maintain an Obsidian-compatible documentation brain using a phase-based workflow with strict/adaptive modes and delta refresh support.",
+  "owner": {
+    "name": "Piyabordee",
+    "url": "https://github.com/Piyabordee"
+  },
+  "plugins": [
+    {
+      "name": "install-obsidian",
+      "source": "./",
+      "description": "Marketplace plugin that guides Claude Code through Analyze → Design → Implement → Cleanup → Optimize Links with stable rules, migration safety, and `/install-obsidian:update <range>` delta-only refresh behavior.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Piyabordee",
+        "url": "https://github.com/Piyabordee"
+      },
+      "category": "development",
+      "keywords": [
+        "documentation",
+        "obsidian",
+        "wiki-links",
+        "knowledge-base",
+        "installer",
+        "claude-code",
+        "delta-refresh"
+      ],
+      "homepage": "https://github.com/Piyabordee/install-obsidian",
+      "repository": "https://github.com/Piyabordee/install-obsidian",
+      "license": "Unlicense"
+    }
+  ]
+}

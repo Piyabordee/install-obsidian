@@ -37,3 +37,9 @@
 - **Decision**: treat `/install-obsidian:update <range>` as a targeted documentation refresh that only updates delta derived from the specified commit window.
 - **Why**: make refresh behavior explicit, reduce accidental full reinstall work, and keep doc updates scoped to the code changes the human actually asked about.
 - **Impact**: README, INSTALL, and Phase 5 now define supported range inputs, scope-control rules, required output, and delta-first link optimization expectations.
+
+## 2026-05-07 — Add Claude Code Marketplace orchestration layer
+
+- **Decision**: add Marketplace metadata and explicit command → agent → skill structure for install-obsidian.
+- **Why**: make the repository directly usable from Claude Code Marketplace while preserving existing phase-based behavior as the source of truth.
+- **Impact**: `.claude-plugin/`, `commands/`, `agents/`, and `skills/` now exist; README/INSTALL/PRINCIPLES/CLAUDE are updated to align with Marketplace usage without replacing installer core rules.

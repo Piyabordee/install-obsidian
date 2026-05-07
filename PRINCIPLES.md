@@ -19,6 +19,16 @@ and apply llm-wiki-inspired practices as a complementary layer:
 
 The inspired layer must not replace or weaken installer requirements.
 
+### 1.5 Marketplace orchestration stays thin and explicit
+
+If this repo is used via Claude Code Marketplace, keep a clear separation:
+
+- `commands/` = user-facing trigger
+- `agents/` = execution protocol
+- `skills/` = reusable domain guidance
+
+Marketplace layers should orchestrate existing install-obsidian behavior, not redefine it.
+
 ### 2. Docs follow the codebase, not the other way around
 
 Documentation structure must reflect the ACTUAL repo structure. Do not impose a predefined folder tree. Instead:
