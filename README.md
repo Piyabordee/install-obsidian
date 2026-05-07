@@ -30,23 +30,7 @@ The inspired layer is an enhancement, not a replacement for the installer core.
 
 ## How to Use
 
-### Option A: Claude Code Marketplace (Recommended)
-
-In Claude Code, install from Marketplace with:
-
-```text
-GitHub: Piyabordee/install-obsidian
-```
-
-Then run:
-
-```text
-/install-obsidian:install
-```
-
-This triggers the Marketplace command → agent → skill flow for this repository.
-
-### Option B: With Claude Code (manual clone)
+### Option A: With Claude Code
 
 ```bash
 # 1. Clone this repository
@@ -67,29 +51,10 @@ claude
 > Read install-obsidian/INSTALL.md and follow the instructions
 ```
 
-### Option C: With any AI agent
+### Option B: With any AI agent
 
 Open `INSTALL.md` and follow the phases. Feed each phase file to your AI agent sequentially.
 Before Phase 2, explicitly choose mode: `strict` (default) or `adaptive`.
-
-If your repo was already installed once, tell the agent that explicitly.
-For refresh runs, prefer targeted updates (often Phase 5 link optimization) instead of repeating Phases 1-3 in full.
-You do not need to recreate `AGENTS.md` when prior migration coverage is already complete.
-
-For targeted refreshes, use `/install-obsidian:update <range>`.
-This means: update only the documentation delta for the specified commit window, not a full reinstall.
-
-Supported examples:
-
-- `/install-obsidian:update 3` → inspect only the last 3 commits
-- `/install-obsidian:update abc123..def456` → inspect a SHA range
-- `/install-obsidian:update since=2026-05-01 until=2026-05-07` → inspect a time window when timestamps are easier than SHAs
-
-Expected result:
-
-- changed files/docs that require updates
-- untouched areas that should remain unchanged
-- pending approvals when the delta implies a structural or high-risk documentation change
 
 ## What You Get
 
@@ -154,10 +119,6 @@ In both modes, files must contain real content. No empty placeholders.
 | [[CHANGELOG]] | Version tracking |
 | `CLAUDE.md` | Operational hub used by AI agents |
 | `decisions.md` | Persistent design decision log |
-| `.claude-plugin/` | Claude Code Marketplace plugin metadata |
-| `commands/` | Marketplace slash command entry points |
-| `agents/` | Marketplace task orchestration agents |
-| `skills/` | Marketplace reusable knowledge modules |
 | `.claude/rules/` | Stable project and security rules |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
 | `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Cleanup → Optimize Links) |

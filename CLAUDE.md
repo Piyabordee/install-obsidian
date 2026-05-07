@@ -17,23 +17,12 @@
 
 ```text
 install-obsidian/
-├── .claude-plugin/
-│   ├── marketplace.json
-│   └── plugin.json
 ├── .claude/
 │   └── rules/
 │       ├── coding-behavior-rules.md
 │       ├── security-rules.md
 │       └── stable-rules.md
-├── agents/
-│   └── install-obsidian-agent.md
-├── commands/
-│   └── install.md
 ├── PHASES/
-├── skills/
-│   └── install-obsidian-skill/
-│       ├── README.md
-│       └── SKILL.md
 ├── TEMPLATES/
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
@@ -77,11 +66,6 @@ At the end of every session, run a final pass:
 1. Update `CLAUDE.md` to match current project state
 2. Update `decisions.md` for any new lasting decisions
 3. Confirm links and paths still point to existing files
-
-## Refresh Update Mode
-
-- `/install-obsidian:update <range>` means delta-only refresh for the specified commit window.
-- Keep refresh edits scoped to affected docs/hubs; do not silently expand into a full reinstall flow.
 
 ---
 
