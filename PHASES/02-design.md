@@ -80,15 +80,15 @@ Rules:
 Include a **Files Marked for Removal** section:
 
 ```markdown
-### Files Marked for Removal (pending Phase 4 verification)
+### Files Marked for Removal (pending Phase 5 verification)
 | File | Content migrated to | Status |
 |------|-------------------|--------|
 | AGENTS.md | [[docs/project/overview]], [[docs/architecture/structure]] | proposed |
 | old-doc.md | [[docs/features/workflow]] | proposed |
 ```
 
-This list is used by Phase 4 to auto-detect and verify files eligible for cleanup.
-Each file starts as `proposed` and gets verified during Phase 4.
+This list is used by Phase 5 to auto-detect and verify files eligible for cleanup.
+Each file starts as `proposed` and gets verified during Phase 5.
 
 ### 2.4 Priority Order
 

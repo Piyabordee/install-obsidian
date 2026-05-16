@@ -121,7 +121,7 @@ In both modes, files must contain real content. No empty placeholders.
 | `decisions.md` | Persistent design decision log |
 | `.claude/rules/` | Stable project and security rules |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
-| `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Cleanup → Optimize Links) |
+| `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Optimize Links → Cleanup) |
 
 ## After Installation
 

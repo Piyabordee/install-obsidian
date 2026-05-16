@@ -2,6 +2,12 @@
 
 > Persistent design decisions for this repository.
 
+## 2026-05-16 — Run Optimize Links before Cleanup
+
+- **Decision**: reorder phases so Optimize Links is Phase 4 and Cleanup is Phase 5.
+- **Why**: align phase sequencing with the updated execution flow request.
+- **Impact**: update phase file names and all references to match the new order.
+
 ## 2026-04-21 — Separate stable rules from CLAUDE.md
 
 - **Decision**: keep immutable rules in `./.claude/rules/` and use `CLAUDE.md` as operational hub.

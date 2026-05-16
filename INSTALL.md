@@ -12,8 +12,8 @@ You are installing an Obsidian-compatible documentation system into this reposit
 1. **Analyze** the repo (do NOT assume anything)
 2. **Design** a doc tree tailored to this specific codebase
 3. **Implement** docs, hub, stable rules, and decisions log
-4. **Clean up** installer artifacts and obsolete files (optional, user-approved)
-5. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
+4. **Optimize links** in `CLAUDE.md` and `docs/` for graph cleanliness and token efficiency
+5. **Clean up** installer artifacts and obsolete files (optional, user-approved)
 
 ## Hybrid Operating Model (mandatory)
 
@@ -58,8 +58,8 @@ If the human does not specify a mode, default to `strict`.
 | 1: ANALYZE | [[PHASES/01-analyze]] | Explore repo structure, identify key folders, subsystems, entry points |
 | 2: DESIGN | [[PHASES/02-design]] | Propose doc tree, CLAUDE.md outline, migration plan |
 | 3: IMPLEMENT | [[PHASES/03-implement]] | Create docs, write content, add links, set up hub, stable rules, and decisions log |
-| 4: CLEANUP | [[PHASES/04-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
-| 5: OPTIMIZE LINKS | [[PHASES/05-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
+| 4: OPTIMIZE LINKS | [[PHASES/04-optimize-links]] | Final link-quality pass: remove duplicate/valueless links, keep graph clean |
+| 5: CLEANUP | [[PHASES/05-cleanup]] | Remove installer artifacts and obsolete files (after human approval) |
 
 ## How to Execute
 
@@ -71,8 +71,8 @@ If the human does not specify a mode, default to `strict`.
 6. Read [[PHASES/03-implement]] and execute it fully
 7. Ensure `decisions.md` is updated with notable design choices from Phase 3
 8. Present the result for final review
-9. Read [[PHASES/04-cleanup]] and execute it after human approves the review
-10. Read [[PHASES/05-optimize-links]] and run final link optimization pass
+9. Read [[PHASES/04-optimize-links]] and run the link optimization pass
+10. Read [[PHASES/05-cleanup]] and execute it after human approves the review
 
 ### Hybrid Practicality Gate (apply in every phase)
 
@@ -118,8 +118,8 @@ High-level verification — see [[PHASES/03-implement]] for the full detailed ch
 - [ ] AGENTS.md migration coverage is 100% (if AGENTS.md exists)
 - [ ] No critical information from AGENTS.md is lost
 - [ ] No empty placeholder files or hardcoded assumptions
-- [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
 - [ ] Link optimization completed for `CLAUDE.md` + `docs/` (duplicate/valueless links removed)
+- [ ] Cleanup completed (installer and obsolete files removed or preserved per user choice)
 - [ ] Hybrid practicality gate passed at each phase (systematic + flexible + high-signal + rationale-first)
 
 ## Definition of Done
@@ -135,8 +135,9 @@ Installation is complete only when all of the following are true:
     - `adaptive`: only analysis-justified categories are present (with rationale in Phase 2 output)
 6. If `AGENTS.md` exists, all meaningful sections are mapped and migrated with evidence
 7. Final link optimization pass completed on `CLAUDE.md` + `docs/`
-8. Post-install validation checklist is complete with no unresolved critical failures
-9. Hybrid model is respected: installer core preserved and inspired layer applied without drift
+8. Cleanup completed (installer and obsolete files removed or preserved per user choice)
+9. Post-install validation checklist is complete with no unresolved critical failures
+10. Hybrid model is respected: installer core preserved and inspired layer applied without drift
 
 ## Post-Install Validation (mandatory)
 
@@ -155,8 +156,8 @@ Run this checklist before closing the installation:
 - [ ] Work was committed in issue-scoped chunks
 - [ ] `CLAUDE.md` was updated at end of session
 - [ ] AGENTS.md migration coverage report included (if AGENTS.md exists)
-- [ ] Cleanup decisions were human-approved item by item
 - [ ] Duplicate/valueless wiki links were removed from `CLAUDE.md` and `docs/`
+- [ ] Cleanup decisions were human-approved item by item
 - [ ] Link graph remains navigable and hub docs are still connected
 - [ ] No low-signal doc sprawl or duplicate-topic docs were introduced
 - [ ] Key docs include context/rationale where code alone is insufficient
