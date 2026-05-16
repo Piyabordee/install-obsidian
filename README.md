@@ -141,4 +141,4 @@ In both modes, files must contain real content. No empty placeholders.
 
 ## License
 
-Public domain. Use freely in any project.
+MIT License
