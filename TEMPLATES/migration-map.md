@@ -58,7 +58,7 @@ Status values:
 
 ---
 
-Related: [[PHASES/02-design]] | [[PHASES/03-implement]] | [[PHASES/04-cleanup]]
+Related: [[PHASES/02-design]] | [[PHASES/03-implement]] | [[PHASES/05-cleanup]]
 ```
 
 ## Guidelines
@@ -66,7 +66,7 @@ Related: [[PHASES/02-design]] | [[PHASES/03-implement]] | [[PHASES/04-cleanup]]
 - Treat migration as section-level work, not file-level only
 - Do not mark a file removable until all meaningful sections are verified
 - Keep uncertain mappings visible and unresolved until human confirms
-- Reuse this map in Phase 2 planning, Phase 3 verification, and Phase 4 cleanup
+- Reuse this map in Phase 2 planning, Phase 3 verification, and Phase 5 cleanup
 - Validate that migrated docs stay practical and high-signal (no template-only content)
 
 ---
@@ -76,4 +76,4 @@ Related: [[PHASES/02-design]] | [[PHASES/03-implement]] | [[PHASES/04-cleanup]]
 - [[INSTALL]] — Main instruction flow with strict/adaptive mode and definition of done
 - [[PHASES/02-design]] — Migration mapping is required here
 - [[PHASES/03-implement]] — Migration coverage gate uses this map
-- [[PHASES/04-cleanup]] — Cleanup verification references this map
+- [[PHASES/05-cleanup]] — Cleanup verification references this map

@@ -1,6 +1,6 @@
-# Phase 5: OPTIMIZE LINKS
+# Phase 4: OPTIMIZE LINKS
 
-> Final link pass after implementation and cleanup.
+> Final link pass after implementation, before cleanup.
 > Remove duplicate/valueless links and improve Obsidian graph clarity.
 
 ---
@@ -12,8 +12,7 @@ Optimize wiki-link structure in `CLAUDE.md` and all files under `docs/` so links
 ## Precondition
 
 - Phase 3: IMPLEMENT is complete (its required checklist/verification has passed)
-- Phase 4: CLEANUP is complete (or explicitly skipped by the human)
-- Human approved entering final optimization pass
+- Human approved entering the link optimization pass
 
 ## What counts as a valueless link
 
@@ -28,7 +27,7 @@ Do NOT remove links that are needed for navigation, provenance, or safety contex
 
 ## Steps
 
-### 5.1 Build Link Inventory
+### 4.1 Build Link Inventory
 
 Scan:
 
@@ -41,7 +40,7 @@ Collect:
 - target file
 - duplicate counts
 
-### 5.2 Identify Optimization Candidates
+### 4.2 Identify Optimization Candidates
 
 Classify each candidate:
 
@@ -49,7 +48,7 @@ Classify each candidate:
 - `valueless` — no meaningful navigation or context gain
 - `keep` — valuable link, keep as-is
 
-### 5.3 Apply Minimal Edits
+### 4.3 Apply Minimal Edits
 
 Edit only what improves signal:
 
@@ -59,7 +58,7 @@ Edit only what improves signal:
 4. Preserve links required for migration evidence, warnings, and design origin
 5. Preserve links that provide high-value rationale context even if they are not structural hubs
 
-### 5.4 Graph Cleanliness Check
+### 4.4 Graph Cleanliness Check
 
 Verify:
 
@@ -68,7 +67,7 @@ Verify:
 - Spoke docs are not isolated unless intentionally standalone
 - Link density is readable (avoid overloaded sections)
 
-### 5.5 Report Outcome
+### 4.5 Report Outcome
 
 Present:
 
@@ -98,5 +97,5 @@ Present:
 
 - [[INSTALL]] — main flow
 - [[PHASES/03-implement]] — docs creation phase
-- [[PHASES/04-cleanup]] — cleanup phase before final optimization
+- [[PHASES/05-cleanup]] — cleanup phase after link optimization
 - [[PRINCIPLES]] — usefulness-first linking principles

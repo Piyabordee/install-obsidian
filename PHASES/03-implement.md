@@ -152,7 +152,7 @@ Wait for the human's final review.
 - [[INSTALL]] — Main instruction flow
 - [[PRINCIPLES]] — Design philosophy governing implementation
 - [[PHASES/02-design]] — Previous phase: approved design
-- [[PHASES/04-cleanup]] — Next phase: remove artifacts
+- [[PHASES/04-optimize-links]] — Next phase: optimize links
 - [[TEMPLATES/architecture-doc]] — Architecture doc template
 - [[TEMPLATES/feature-doc]] — Feature doc template
 - [[TEMPLATES/project-doc]] — Project doc template

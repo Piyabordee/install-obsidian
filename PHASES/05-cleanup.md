@@ -1,4 +1,4 @@
-# Phase 4: CLEANUP
+# Phase 5: CLEANUP
 
 > Remove installer artifacts and obsolete files after successful installation.
 > Do NOT delete anything without explicit human confirmation.
@@ -12,11 +12,12 @@ Clean up files that are no longer needed after the documentation system is insta
 ## Precondition
 
 - Phase 3 is complete AND the human has approved the final review
+- Phase 4: OPTIMIZE LINKS is complete (or explicitly skipped by the human)
 - Do NOT run this phase if the human flagged issues in Phase 3
 
 ## Steps
 
-### 4.1 Identify Files Marked for Removal
+### 5.1 Identify Files Marked for Removal
 
 During [[PHASES/02-design]], the migration plan tracked which existing files had their content
 redistributed into the new doc structure. Cross-reference that plan to build a
@@ -37,14 +38,14 @@ Also detect any additional files that may now be redundant:
 If the file is `AGENTS.md`, section-level verification is mandatory and must reference
 the mapping produced in [[PHASES/02-design]] (recommended format: [[TEMPLATES/migration-map]]).
 
-### 4.2 Detect Installer Directory
+### 5.2 Detect Installer Directory
 
 Check if `install-obsidian/` (this installer) exists in the repo root.
 
 - If found, note its path and size
 - If not found (installer was run from outside the repo), skip this step
 
-### 4.3 Present Cleanup Report
+### 5.3 Present Cleanup Report
 
 Show the human a structured report of everything identified:
 
@@ -65,7 +66,7 @@ Show the human a structured report of everything identified:
 - [list any files that were NOT migrated or should be kept]
 ```
 
-### 4.4 Get Human Confirmation
+### 5.4 Get Human Confirmation
 
 For EACH item in the report, ask the human individually:
 
@@ -82,7 +83,7 @@ Rules:
 - If the human says "no" or "skip" for any file, preserve it
 - **Never delete `AGENTS.md`** unless every meaningful section is `verified` with section-level evidence
 
-### 4.5 Execute Cleanup
+### 5.5 Execute Cleanup
 
 After receiving confirmation for each item:
 
@@ -93,7 +94,7 @@ After receiving confirmation for each item:
    - Search all docs for wiki links to deleted files
    - If broken links are found, report them immediately and offer to fix
 
-### 4.6 Post-Cleanup Verification
+### 5.6 Post-Cleanup Verification
 
 - [ ] No broken wiki links remain
 - [ ] No referenced files were accidentally deleted
@@ -133,4 +134,4 @@ conversation was driving the installer and the human should be aware it is gone.
 - [[INSTALL]] — Main instruction flow
 - [[PHASES/02-design]] — Phase 2: migration plan originates here
 - [[PHASES/03-implement]] — Phase 3: must be complete before cleanup
-- [[PHASES/05-optimize-links]] — Final pass after cleanup to optimize wiki links
+- [[PHASES/04-optimize-links]] — Link optimization before cleanup

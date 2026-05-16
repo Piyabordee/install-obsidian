@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - .claude/rules/security-rules.md — stable security constraints separated from CLAUDE.md
 - .claude/rules/stable-rules.md — stable project constraints separated from CLAUDE.md
 - decisions.md — persistent design decision log for context resets
-- PHASES/05-optimize-links.md — final phase for link-quality optimization in `CLAUDE.md` + `docs/`
+- PHASES/04-optimize-links.md — link-quality optimization for `CLAUDE.md` + `docs/`
 - Hybrid strategy guidance across docs: preserve installer core and apply llm-wiki-inspired practices as a complementary layer
 - Hybrid practicality gates and drift-guard checkpoints in installation workflow phases
 - Template-level support for context/rationale capture and lightweight decision trace
@@ -24,10 +24,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README.md now documents strict vs adaptive output expectations
 - PHASES/02-design.md now requires full AGENTS.md section mapping before Phase 3
 - PHASES/03-implement.md now includes a 100% AGENTS.md migration coverage gate
-- PHASES/04-cleanup.md now requires section-level migration evidence before deleting AGENTS.md
+- PHASES/05-cleanup.md now requires section-level migration evidence before deleting AGENTS.md
 - TEMPLATES/hub-claude-md.md now requires stable rules in `./.claude/rules/`, directory tree, DoD, and session closeout
 - INSTALL.md and PHASES/03-implement.md now include stable rules separation, decisions.md, and verification/closeout expectations
-- INSTALL.md and README.md now include a final Optimize Links phase for duplicate/valueless link cleanup
+- INSTALL.md and README.md now include an Optimize Links phase for duplicate/valueless link cleanup
+- Phase order now runs Optimize Links before Cleanup (Phase 4 then Phase 5)
 - README.md now explicitly defines the hybrid model (`install-obsidian core` + `llm-wiki-inspired` layer)
 - PRINCIPLES.md now adds hybrid doctrine and context/rationale-first anti-drift principles
 - PHASES/01-05 now include systematic + flexible checkpoints and stronger anti-duplication guidance
