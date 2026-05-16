@@ -27,6 +27,7 @@ install-obsidian/
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── INSTALL.md
+├── LICENSE
 ├── PRINCIPLES.md
 ├── README.md
 └── decisions.md

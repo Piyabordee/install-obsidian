@@ -2,6 +2,12 @@
 
 > Persistent design decisions for this repository.
 
+## 2026-05-16 — Switch license to MIT
+
+- **Decision**: replace the Unlicense with the MIT License.
+- **Why**: align the project with the MIT licensing model.
+- **Impact**: update LICENSE content and references in docs.
+
 ## 2026-05-16 — Run Optimize Links before Cleanup
 
 - **Decision**: reorder phases so Optimize Links is Phase 4 and Cleanup is Phase 5.

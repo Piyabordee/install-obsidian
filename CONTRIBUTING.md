@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are welcome! This project is public domain, so feel free to use and modify it.
+Contributions are welcome! This project is licensed under the MIT License, so feel free to use and modify it.
 
 ## How to Contribute
 
