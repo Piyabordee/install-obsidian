@@ -32,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README.md now explicitly defines the hybrid model (`install-obsidian core` + `llm-wiki-inspired` layer)
 - PRINCIPLES.md now adds hybrid doctrine and context/rationale-first anti-drift principles
 - PHASES/01-05 now include systematic + flexible checkpoints and stronger anti-duplication guidance
+- LICENSE now uses the MIT License
 
 ## [1.0.0] - 2026-04-18
 

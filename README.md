@@ -4,7 +4,7 @@
 > Drop this folder into any repo. AI reads the instructions, analyzes your codebase, and builds a documentation brain automatically.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-Unlicense-green)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
