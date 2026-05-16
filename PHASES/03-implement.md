@@ -59,7 +59,7 @@ Use [[TEMPLATES/hub-claude-md]] as the structure guide:
 
 Create or update:
 
-1. `./.claude/rules/` for stable rules (security/compliance/permanent constraints)
+1. `./.claude/rules/` for stable rules (security/compliance/permanent constraints). Create all stable rule files referenced in CLAUDE.md (currently `stable-rules.md`, `security-rules.md`, `coding-behavior-rules.md`)—do not stop at `stable-rules.md` alone.
 2. `decisions.md` for design rationale that must survive context resets
 
 Rules:
