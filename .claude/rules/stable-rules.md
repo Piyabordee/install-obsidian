@@ -8,3 +8,4 @@ Persistent rules for this repository:
 4. Avoid duplicating information; use links instead.
 5. Keep templates generic (no repo-specific assumptions).
 6. Maintain changelog entries for notable behavioral/instruction changes.
+7. Install and keep **all** files in `./.claude/rules/`; verify completeness against `CLAUDE.md` before proceeding.

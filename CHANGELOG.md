@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PRINCIPLES.md now adds hybrid doctrine and context/rationale-first anti-drift principles
 - PHASES/01-05 now include systematic + flexible checkpoints and stronger anti-duplication guidance
 - LICENSE now uses the MIT License
+- Stable rules now require installing all `.claude/rules` files and verifying completeness against `CLAUDE.md`
 
 ## [1.0.0] - 2026-04-18
 

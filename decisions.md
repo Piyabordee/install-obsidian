@@ -2,6 +2,12 @@
 
 > Persistent design decisions for this repository.
 
+## 2026-05-21 — Enforce complete stable rules installation
+
+- **Decision**: require all files in `./.claude/rules/` to be installed and verified against `CLAUDE.md`.
+- **Why**: prevent partial rule application and reduce drift across sessions.
+- **Impact**: agents must confirm rule completeness before starting; see [[.claude/rules/stable-rules]].
+
 ## 2026-05-16 — Switch license to MIT
 
 - **Decision**: replace the Unlicense with the MIT License.
