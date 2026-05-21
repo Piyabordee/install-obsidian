@@ -36,18 +36,7 @@ The inspired layer is an enhancement, not a replacement for the installer core.
 # 1. Clone this repository
 git clone https://github.com/Piyabordee/install-obsidian.git
 
-# 2. Copy this folder into your repo root
-# macOS / Linux:
-cp -r install-obsidian/ /path/to/your-repo/
-
-# Windows (PowerShell):
-Copy-Item -Recurse install-obsidian\ C:\path\to\your-repo\
-
-# 3. Open Claude Code in your repo
-cd /path/to/your-repo
-claude
-
-# 4. Tell Claude:
+# 2. Tell Claude:
 > Read install-obsidian/INSTALL.md and follow the instructions
 ```
 
