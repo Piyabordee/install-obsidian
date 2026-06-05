@@ -67,14 +67,30 @@ Rules:
 - decisions.md entries must include decision + rationale + impact
 - Do not duplicate long explanations already covered in docs; link instead
 
-### 3.6 Handle Existing Docs
+### 3.6 Install Updating-Docs Skill
+
+The `updating-docs` skill ships with this installer. Copy it to the target repo so future agents can maintain docs without re-learning the discipline:
+
+```bash
+# Read the skill from THIS installer repo and write to target
+mkdir -p .claude/skills/updating-docs
+```
+
+1. Read the skill file from this installer repo at `.claude/skills/updating-docs/SKILL.md`
+2. Write it to `<target>/.claude/skills/updating-docs/SKILL.md` (verbatim, no edits — the skill is generic by design)
+3. Add a single line in `CLAUDE.md` "Read First" section: `.claude/skills/updating-docs` — Doc-update skill (read-first, write-second discipline)
+4. If the target already has a `.claude/skills/` folder, merge carefully — preserve any existing skills, append the new one
+
+This is a **core output** in both `strict` and `adaptive` modes.
+
+### 3.7 Handle Existing Docs
 
 Per the approved migration plan:
 - Keep, redirect, or link existing docs as approved
 - Do NOT delete anything the human hasn't explicitly approved for deletion
 - If in doubt, preserve and link
 
-### 3.7 Migration Coverage Gate (AGENTS.md)
+### 3.8 Migration Coverage Gate (AGENTS.md)
 
 If `AGENTS.md` exists:
 
@@ -87,7 +103,7 @@ If `AGENTS.md` exists:
 4. Gate rule: coverage must be `Y/Y` (100%) before implementation can be considered complete
 5. If any section is unmapped or uncertain, mark implementation as incomplete and return to migration work
 
-### 3.8 Final Verification
+### 3.9 Final Verification
 
 After creating all docs:
 
@@ -105,6 +121,8 @@ After creating all docs:
 - [ ] CLAUDE.md contains an authoritative directory tree
 - [ ] Stable rules exist in `./.claude/rules/` and are not mixed into CLAUDE.md
 - [ ] decisions.md exists and includes key design choices
+- [ ] `updating-docs` skill installed at `.claude/skills/updating-docs/SKILL.md`
+- [ ] `updating-docs` skill referenced in `CLAUDE.md` "Read First"
 - [ ] Verification commands passed for affected stack (`tsc --noEmit` for TypeScript repos)
 - [ ] Work was committed in issue-scoped chunks
 - [ ] CLAUDE.md updated at end of session
@@ -126,16 +144,16 @@ Present the result:
 ## Implementation Complete
 
 ### Created
-- [list all new files]
+- [list all new files, including .claude/skills/updating-docs/SKILL.md]
 
 ### Modified
-- [list all changed files]
+- [list all changed files, including CLAUDE.md Read First entry pointing to the skill]
 
 ### Preserved
 - [list untouched files]
 
 ### Verification
-- [checklist results]
+- [checklist results, including skill installation]
 
 ### Migration Coverage (if AGENTS.md exists)
 - mapped sections: [X/Y]
@@ -160,3 +178,4 @@ Wait for the human's final review.
 - [[TEMPLATES/hub-claude-md]] — CLAUDE.md hub template
 - [[TEMPLATES/index-doc]] — Index doc template
 - [[TEMPLATES/migration-map]] — Migration mapping template
+- [[.claude/skills/updating-docs]] — Generic doc-update skill shipped with this installer

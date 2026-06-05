@@ -2,6 +2,12 @@
 
 > Persistent design decisions for this repository.
 
+## 2026-06-05 — Ship generic `updating-docs` skill to every target repo
+
+- **Decision**: add `.claude/skills/updating-docs/SKILL.md` to install-obsidian and have PHASES/03-implement step 3.6 copy it to the target repo's `.claude/skills/updating-docs/`. Treat the skill as a core output in both `strict` and `adaptive` modes.
+- **Why**: docs in target repos drift (orphan docs, contradicted stable rules, raw paths instead of wiki links) when future agents skip context before writing. A pre-installed discipline skill forces read-first, write-second behavior so the doc graph stays navigable across sessions.
+- **Impact**: the skill is generic (no install-obsidian-specific content) so it survives verbatim copy. INSTALL.md DoD, Post-Install Validation, and core outputs now include the skill. TEMPLATES/hub-claude-md.md and CLAUDE.md directory trees now include `.claude/skills/`.
+
 ## 2026-05-16 — Switch license to MIT
 
 - **Decision**: replace the Unlicense with the MIT License.

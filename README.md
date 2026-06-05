@@ -54,6 +54,7 @@ This installer supports two output modes.
 - `CLAUDE.md` as the project operational hub
 - `docs/_index.md` as the documentation navigation hub
 - `./.claude/rules/stable-rules.md` and `./.claude/rules/security-rules.md` for stable/non-negotiable constraints
+- `./.claude/skills/updating-docs/SKILL.md` — generic doc-update skill (forces read-first, write-second discipline for future agents)
 - `decisions.md` for persistent design decisions across sessions
 
 ### Strict mode (default)
@@ -109,6 +110,7 @@ In both modes, files must contain real content. No empty placeholders.
 | `CLAUDE.md` | Operational hub used by AI agents |
 | `decisions.md` | Persistent design decision log |
 | `.claude/rules/` | Stable project and security rules |
+| `.claude/skills/updating-docs/` | Generic doc-update skill shipped to target repos |
 | `TEMPLATES/` | Document structure templates, including migration mapping |
 | `PHASES/` | Sequential execution phases (Analyze → Design → Implement → Optimize Links → Cleanup) |
 

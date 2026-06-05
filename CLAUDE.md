@@ -2,6 +2,7 @@
 
 > Operational hub for AI agents working in this repository.
 > Stable/non-negotiable rules live in `./.claude/rules/`.
+> Generic doc-update skill lives in `./.claude/skills/updating-docs/`.
 
 ---
 
@@ -10,6 +11,7 @@
 - [[README]] — project overview
 - [[INSTALL]] — execution flow for AI agents
 - [[PRINCIPLES]] — design rules
+- [[.claude/skills/updating-docs]] — generic doc-update skill shipped to target repos (read this when working on the skill itself or Phase 3 step 3.6)
 
 ---
 
@@ -18,10 +20,13 @@
 ```text
 install-obsidian/
 ├── .claude/
-│   └── rules/
-│       ├── coding-behavior-rules.md
-│       ├── security-rules.md
-│       └── stable-rules.md
+│   ├── rules/
+│   │   ├── coding-behavior-rules.md
+│   │   ├── security-rules.md
+│   │   └── stable-rules.md
+│   └── skills/
+│       └── updating-docs/
+│           └── SKILL.md
 ├── PHASES/
 ├── TEMPLATES/
 ├── CHANGELOG.md
@@ -44,6 +49,7 @@ install-obsidian/
 2. **Operational rules (editable)**: use this `CLAUDE.md` for workflow/navigation.
 3. **Task-specific instructions**: follow user instructions in current session.
 4. **Hybrid strategy**: preserve installer core requirements; apply llm-wiki-inspired practices as a complementary layer.
+5. **Shipped skills**: `./.claude/skills/updating-docs/SKILL.md` is the generic doc-update skill that the installer copies to every target repo (see [[PHASES/03-implement]] step 3.6).
 
 ---
 

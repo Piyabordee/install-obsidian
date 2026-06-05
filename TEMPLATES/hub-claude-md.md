@@ -31,6 +31,7 @@
 ## Read First
 
 - `/.claude/rules/*` — Stable rules (security/compliance/always-on)
+- `/.claude/skills/updating-docs/SKILL.md` — Doc-update skill (read-first, write-second discipline)
 - [[docs/_index]] — Full documentation map
 - [[docs/project/overview]] — Project identity and stack
 - [[README]] — User-facing introduction
@@ -52,7 +53,10 @@
 ```text
 [project-root]/
 ├── .claude/
-│   └── rules/
+│   ├── rules/
+│   └── skills/
+│       └── updating-docs/
+│           └── SKILL.md
 ├── docs/
 │   ├── _index.md
 │   ├── project/

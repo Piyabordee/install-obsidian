@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- .claude/skills/updating-docs/SKILL.md — generic doc-update skill shipped to every target repo (read-first, write-second discipline, 6-item completion checklist, red flags)
+- PHASES/03-implement.md step 3.6 — installer now copies the `updating-docs` skill to target's `.claude/skills/updating-docs/`
 - TEMPLATES/migration-map.md — standard section-by-section migration map template for AGENTS.md and legacy docs
 - INSTALL.md definition of done and mandatory post-install validation checklist
 - CLAUDE.md — repository operational hub with directory tree, DoD, and session closeout
@@ -20,6 +22,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Template-level support for context/rationale capture and lightweight decision trace
 
 ### Changed
+- INSTALL.md DoD now includes item 11 — `updating-docs` skill installed and referenced by `CLAUDE.md`
+- INSTALL.md Post-Install Validation now includes two new checks for the skill
+- INSTALL.md and README.md Core Outputs now list the `updating-docs` skill as a core deliverable in both modes
+- TEMPLATES/hub-claude-md.md directory tree and Read First section now include `.claude/skills/updating-docs/`
+- CLAUDE.md directory tree and Rule Layers now include the shipped skills folder
 - INSTALL.md now requires installation mode selection (`strict` default or `adaptive`)
 - README.md now documents strict vs adaptive output expectations
 - PHASES/02-design.md now requires full AGENTS.md section mapping before Phase 3

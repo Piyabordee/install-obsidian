@@ -138,6 +138,7 @@ Installation is complete only when all of the following are true:
 8. Cleanup completed (installer and obsolete files removed or preserved per user choice)
 9. Post-install validation checklist is complete with no unresolved critical failures
 10. Hybrid model is respected: installer core preserved and inspired layer applied without drift
+11. `updating-docs` skill installed at `./.claude/skills/updating-docs/SKILL.md` and referenced by `CLAUDE.md` Read First
 
 ## Post-Install Validation (mandatory)
 
@@ -151,6 +152,8 @@ Run this checklist before closing the installation:
 - [ ] No broken wiki links to missing files
 - [ ] Selected mode validation passed (`strict` or `adaptive`)
 - [ ] Stable rules are placed in `./.claude/rules/` (not mixed into CLAUDE.md)
+- [ ] `updating-docs` skill installed at `./.claude/skills/updating-docs/SKILL.md`
+- [ ] `updating-docs` skill referenced by `CLAUDE.md` Read First section
 - [ ] `decisions.md` records key design choices
 - [ ] Verification command for affected stack passed (`tsc --noEmit` for TypeScript repos)
 - [ ] Work was committed in issue-scoped chunks
@@ -205,6 +208,7 @@ If the repo is a single-file project or lacks identifiable directories:
 - [[PRINCIPLES]] — Design philosophy that governs all decisions
 - [[CONTRIBUTING]] — How to contribute changes
 - [[CHANGELOG]] — Version history
+- [[.claude/skills/updating-docs]] — Generic doc-update skill shipped with this installer
 
 ---
 
