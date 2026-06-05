@@ -83,6 +83,24 @@ mkdir -p .claude/skills/updating-docs
 
 This is a **core output** in both `strict` and `adaptive` modes.
 
+#### Adding More Skills to the Installer
+
+To ship an additional skill (e.g. `validating-docs`, `migrating-agents-md`):
+
+1. Add the skill to this installer repo under `.claude/skills/<skill-name>/SKILL.md`
+   - Skill name uses kebab-case letters/numbers/hyphens only
+   - Frontmatter: `name` + `description` (max 1024 chars; description starts with "Use when..." and lists triggers, not workflow)
+2. Add a parallel step in this file (e.g. `3.7 Install <Skill-Name> Skill`) with the same copy-pattern as 3.6
+3. Add a verification check in step 3.9 (Final Verification) for the new skill
+4. Update `INSTALL.md` Definition of Done + Post-Install Validation with the new skill
+5. Update `TEMPLATES/hub-claude-md.md` directory tree and Read First section
+6. Update `README.md` Core Outputs + Folder Contents
+7. Update `CHANGELOG.md` Unreleased → Added
+8. Update `decisions.md` with the new design decision
+9. Commit as a single issue-scoped change
+
+**Rule of thumb:** keep each skill generic and self-contained. No skill should reference `install-obsidian` or any other specific repo — that way it survives verbatim copy into arbitrary target repos.
+
 ### 3.7 Handle Existing Docs
 
 Per the approved migration plan:

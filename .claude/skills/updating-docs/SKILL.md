@@ -23,7 +23,7 @@ This skill enforces the **read-first, write-second** discipline for documentatio
 - Inline code comments (use language conventions instead)
 - `CHANGELOG.md` entries (use Keep a Changelog format)
 - Decisions log (`decisions.md` has its own format)
-- This install-obsidian repo's own top-level files (README, INSTALL, PRINCIPLES, CONTRIBUTING, CHANGELOG, CLAUDE.md, decisions.md) — those follow a different convention and live in their own governance flow
+- This repo's own governance files (top-level `README`, `INSTALL`, `PRINCIPLES`, `CONTRIBUTING`, `CHANGELOG`, `CLAUDE.md`) — those follow a different convention and are maintained outside this skill's scope
 
 ## Required Pre-Reading (MUST do before writing)
 
@@ -211,7 +211,5 @@ Read docs/features/closest-sibling.md
 - [[CLAUDE]] — Project hub, has the directory tree and Documentation Map
 - [[.claude/rules/stable-rules]] — Non-negotiable rules every doc must respect
 - [[docs/_index]] — Documentation index you must update when adding a doc
-- [[TEMPLATES/feature-doc]] — Example of a feature doc structure (in the installer repo)
-- [[TEMPLATES/architecture-doc]] — Example of an architecture doc structure
-- [[TEMPLATES/project-doc]] — Example of a project doc structure
-- [[TEMPLATES/reference-doc]] — Example of a reference doc structure
+- `TEMPLATES/*` in this repo (if present) — doc structure templates; match your new doc to the closest existing sibling
+- `docs/features/<closest-sibling>` — the most similar existing doc in the same category; match its style
